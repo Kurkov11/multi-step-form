@@ -18,6 +18,11 @@ module.exports = {
         "purple-blue": "hsl(243, 100%, 62%)",
         "pastel-blue": "hsl(228, 100%, 84%)",
         "red": "hsl(354, 84%, 57%)"
+      },
+      fontSize: {
+        "900": '2rem',
+        "700": "1.5rem",
+        "500": "1rem"
       }
     },
   },
