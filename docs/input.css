@@ -14,3 +14,9 @@
     font-family: "Ubuntu-Regular";
     src: url(../assets/fonts/Ubuntu-Regular.ttf);
 }
+
+@layer base{
+    h1{
+        @apply font-ubuntuBold text-900
+    }
+}

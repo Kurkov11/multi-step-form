@@ -444,6 +444,11 @@ video {
   display: none;
 }
 
+h1 {
+  font-family: Ubuntu-Bold, sans-serif;
+  font-size: 2rem;
+}
+
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
