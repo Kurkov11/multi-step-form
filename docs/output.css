@@ -548,14 +548,6 @@ video {
   margin-left: auto;
 }
 
-.ms-auto {
-  margin-inline-start: auto;
-}
-
-.mr-auto {
-  margin-right: auto;
-}
-
 .block {
   display: block;
 }
@@ -564,42 +556,17 @@ video {
   display: flex;
 }
 
-.grid {
-  display: grid;
-}
-
 .w-fit {
   width: -moz-fit-content;
   width: fit-content;
-}
-
-.grid-cols-1 {
-  grid-template-columns: repeat(1, minmax(0, 1fr));
-}
-
-.grid-rows-1 {
-  grid-template-rows: repeat(1, minmax(0, 1fr));
 }
 
 .justify-center {
   justify-content: center;
 }
 
-.gap-5 {
-  gap: 1.25rem;
-}
-
-.gap-3 {
-  gap: 0.75rem;
-}
-
 .gap-4 {
   gap: 1rem;
-}
-
-.bg-red-500 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(239 68 68 / var(--tw-bg-opacity));
 }
 
 .py-8 {
@@ -607,27 +574,20 @@ video {
   padding-bottom: 2rem;
 }
 
-.pt-5 {
-  padding-top: 1.25rem;
+@font-face {
+  font-family: "Ubuntu-Bold";
+
+  src: url(../assets/fonts/Ubuntu-Bold.ttf);
 }
 
-.pt-8 {
-  padding-top: 2rem;
+@font-face {
+  font-family: "Ubuntu-Medium";
+
+  src: url(../assets/fonts/Ubuntu-Medium.ttf);
 }
 
-.\[\&\>\*\]\:inline-block>* {
-  display: inline-block;
-}
+@font-face {
+  font-family: "Ubuntu-Regular";
 
-.\[\&\>\*\]\:rounded-full>* {
-  border-radius: 9999px;
-}
-
-.\[\&\>\*\]\:bg-red-500>* {
-  --tw-bg-opacity: 1;
-  background-color: rgb(239 68 68 / var(--tw-bg-opacity));
-}
-
-.\[\&\>\*\]\:p-4>* {
-  padding: 1rem;
+  src: url(../assets/fonts/Ubuntu-Regular.ttf);
 }
