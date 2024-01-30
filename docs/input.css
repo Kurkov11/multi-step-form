@@ -22,4 +22,7 @@
     h2 {
         @apply font-ubuntuRegular text-700 text-neutral-700
     }
+    .sidebar__circle{
+        @apply p-3 bg-red
+    }
 }
