@@ -19,4 +19,7 @@
     h1{
         @apply font-ubuntuBold text-900
     }
+    h2 {
+        @apply font-ubuntuRegular text-700
+    }
 }

@@ -449,6 +449,11 @@ h1 {
   font-size: 2rem;
 }
 
+h2 {
+  font-family: Ubuntu-Regular, sans-serif;
+  font-size: 1.5rem;
+}
+
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
