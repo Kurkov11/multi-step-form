@@ -17,9 +17,9 @@
 
 @layer base{
     h1{
-        @apply font-ubuntuBold text-900
+        @apply font-ubuntuBold text-900 text-dark-blue
     }
     h2 {
-        @apply font-ubuntuRegular text-700
+        @apply font-ubuntuRegular text-700 text-neutral-700
     }
 }

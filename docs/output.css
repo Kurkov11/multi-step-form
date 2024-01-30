@@ -447,11 +447,15 @@ video {
 h1 {
   font-family: Ubuntu-Bold, sans-serif;
   font-size: 2rem;
+  --tw-text-opacity: 1;
+  color: hsl(213 96% 18% / var(--tw-text-opacity));
 }
 
 h2 {
   font-family: Ubuntu-Regular, sans-serif;
   font-size: 1.5rem;
+  --tw-text-opacity: 1;
+  color: hsl(231 11% 63% / var(--tw-text-opacity));
 }
 
 *, ::before, ::after {
