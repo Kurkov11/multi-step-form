@@ -1,0 +1,15 @@
+{
+  "name": "multi-step-form-main",
+  "version": "1.0.0",
+  "description": "![Design preview for the Multi-step form coding challenge](./design/desktop-preview.jpg)",
+  "main": "index.js",
+  "scripts": {
+    "watch-css": "npx tailwindcss -i ./docs/input.css -o ./docs/output.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "tailwindcss": "^3.4.1"
+  }
+}
