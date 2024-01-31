@@ -10,5 +10,8 @@ const personalSubmit = document.querySelector('#personal-submit');
 
 const personalForm = document.querySelector('#personal-info');
 personalForm.addEventListener("submit", function(e){
+    const nameValue = nameIn.value;
+    const emailValue = emailIn.value;
+    const phoneValue = phoneIn.value;
     
 });
