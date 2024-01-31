@@ -446,22 +446,44 @@ video {
 
 h1 {
   font-family: Ubuntu-Bold, sans-serif;
-  font-size: 2rem;
+  font-size: 1.5rem;
   --tw-text-opacity: 1;
   color: hsl(213 96% 18% / var(--tw-text-opacity));
 }
 
 h2 {
   font-family: Ubuntu-Regular, sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.125rem;
   --tw-text-opacity: 1;
   color: hsl(231 11% 63% / var(--tw-text-opacity));
 }
 
+.sidebar {
+  display: flex;
+  justify-content: center;
+  background-image: url('../assets/images/bg-sidebar-mobile.svg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-bottom: 5rem;
+}
+
 .sidebar__circle {
-  --tw-bg-opacity: 1;
-  background-color: hsl(354 84% 57% / var(--tw-bg-opacity));
-  padding: 0.75rem;
+  position: relative;
+  border-radius: 9999px;
+  border-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgb(255 255 255 / var(--tw-border-opacity));
+  padding: 1rem;
+}
+
+.sidebar__circle__a {
+  position: absolute;
+  top: 0.25rem;
+  left: 0.75rem;
+  font-size: 0.938rem;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 *, ::before, ::after {
@@ -564,24 +586,8 @@ h2 {
   --tw-backdrop-sepia:  ;
 }
 
-.absolute {
-  position: absolute;
-}
-
-.relative {
-  position: relative;
-}
-
-.top-0 {
-  top: 0px;
-}
-
 .ml-auto {
   margin-left: auto;
-}
-
-.mr-auto {
-  margin-right: auto;
 }
 
 .block {
@@ -597,17 +603,28 @@ h2 {
   width: fit-content;
 }
 
-.justify-center {
-  justify-content: center;
-}
-
 .gap-4 {
   gap: 1rem;
+}
+
+.bg-red {
+  --tw-bg-opacity: 1;
+  background-color: hsl(354 84% 57% / var(--tw-bg-opacity));
+}
+
+.bg-light-blue {
+  --tw-bg-opacity: 1;
+  background-color: hsl(206 94% 87% / var(--tw-bg-opacity));
 }
 
 .py-8 {
   padding-top: 2rem;
   padding-bottom: 2rem;
+}
+
+.text-dark-blue {
+  --tw-text-opacity: 1;
+  color: hsl(213 96% 18% / var(--tw-text-opacity));
 }
 
 @font-face {
