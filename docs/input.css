@@ -44,6 +44,6 @@
         @apply text-dark-blue font-ubuntuRegular text-500
     }
     .dark-blue-button{
-        @apply bg-dark-blue font-ubuntuRegular text-500 text-white px-4 py-2.5 rounded-sm
+        @apply bg-dark-blue font-ubuntuRegular text-600 text-white px-4 py-2.5 rounded-sm
     }
 }
