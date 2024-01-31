@@ -46,4 +46,7 @@
     .dark-blue-button{
         @apply bg-dark-blue font-ubuntuRegular text-600 text-white px-4 py-2.5 rounded-sm
     }
+    .error{
+        @apply text-red font-ubuntuMedium text-500 hidden
+    }
 }
