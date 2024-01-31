@@ -524,6 +524,11 @@ input::placeholder {
   color: hsl(231 11% 63% / var(--tw-text-opacity));
 }
 
+input:focus {
+  outline-style: solid;
+  outline-color: hsl(243, 100%, 62%);
+}
+
 .border-input {
   border-radius: 0.375rem;
   border-width: 1px;
@@ -664,17 +669,13 @@ label {
   height: 87vh;
 }
 
-.h-full {
-  height: 100%;
+.h-fit {
+  height: -moz-fit-content;
+  height: fit-content;
 }
 
 .h-restOfScreen {
   height: 13vh;
-}
-
-.h-fit {
-  height: -moz-fit-content;
-  height: fit-content;
 }
 
 .w-fit {
@@ -684,10 +685,6 @@ label {
 
 .w-full {
   width: 100%;
-}
-
-.items-start {
-  align-items: flex-start;
 }
 
 .items-center {

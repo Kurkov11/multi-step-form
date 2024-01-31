@@ -35,7 +35,7 @@
         @apply mx-side-margin bg-white rounded-xl absolute top-26 px-6 py-7
     }
     input{
-        @apply placeholder:text-600 placeholder:text-neutral-700 px-5 py-2 mb-2 block w-full
+        @apply placeholder:text-600 placeholder:text-neutral-700 px-5 py-2 mb-2 block w-full focus:outline focus:outline-purple-blue
     }
     .border-input{
         @apply border rounded-md border-neutral-400
