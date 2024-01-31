@@ -26,6 +26,9 @@ module.exports = {
       },
       margin: {
         "side-margin": "1rem"
+      },
+      inset: {
+        "26": "6.5rem"
       }
     },
   },
