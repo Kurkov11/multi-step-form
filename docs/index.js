@@ -8,8 +8,7 @@ const phoneEmpty = document.querySelector('#phone__empty');
 
 const personalSubmit = document.querySelector('#personal-submit');
 
+const personalForm = document.querySelector('#personal-info');
 personalSubmit.addEventListener("click", function(e){
-    const nameVal = nameIn.value;
-    const emailVal = emailIn.value;
-    const phoneVal = phoneIn.value;
+
 });
