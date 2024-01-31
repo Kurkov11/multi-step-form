@@ -673,7 +673,11 @@ label {
 }
 
 .h-almostScreen {
-  height: 90vh;
+  height: 87vh;
+}
+
+.h-full {
+  height: 100%;
 }
 
 .w-fit {
