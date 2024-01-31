@@ -513,13 +513,13 @@ input {
 }
 
 input::-moz-placeholder {
-  font-size: 1rem;
+  font-size: 0.938rem;
   --tw-text-opacity: 1;
   color: hsl(231 11% 63% / var(--tw-text-opacity));
 }
 
 input::placeholder {
-  font-size: 1rem;
+  font-size: 0.938rem;
   --tw-text-opacity: 1;
   color: hsl(231 11% 63% / var(--tw-text-opacity));
 }
@@ -547,7 +547,7 @@ label {
   padding-top: 0.625rem;
   padding-bottom: 0.625rem;
   font-family: Ubuntu-Regular, sans-serif;
-  font-size: 1rem;
+  font-size: 0.938rem;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }

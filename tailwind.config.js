@@ -22,7 +22,7 @@ module.exports = {
       fontSize: {
         "900": '1.5rem',
         "700": "1.125rem",
-        "600": "1rem",
+        "600": "0.938rem",
         "500": "0.813rem"
       },
       margin: {
