@@ -657,6 +657,14 @@ label {
   --tw-backdrop-sepia:  ;
 }
 
+.mr-5 {
+  margin-right: 1.25rem;
+}
+
+.mr-side-margin {
+  margin-right: 1rem;
+}
+
 .block {
   display: block;
 }
