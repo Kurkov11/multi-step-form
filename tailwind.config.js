@@ -23,6 +23,9 @@ module.exports = {
         "900": '1.5rem',
         "700": "1.125rem",
         "500": "0.938rem"
+      },
+      padding: {
+        "side-margin": "1rem"
       }
     },
   },
