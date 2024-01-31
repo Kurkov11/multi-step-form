@@ -650,6 +650,14 @@ label {
   display: flex;
 }
 
+.h-full {
+  height: 100%;
+}
+
+.h-screen {
+  height: 100vh;
+}
+
 .w-fit {
   width: -moz-fit-content;
   width: fit-content;
