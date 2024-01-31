@@ -672,6 +672,11 @@ label {
   height: 13vh;
 }
 
+.h-fit {
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
 .w-fit {
   width: -moz-fit-content;
   width: fit-content;
@@ -683,6 +688,10 @@ label {
 
 .items-start {
   align-items: flex-start;
+}
+
+.items-center {
+  align-items: center;
 }
 
 .justify-end {
