@@ -677,6 +677,11 @@ label {
   gap: 1rem;
 }
 
+.border-light-blue {
+  --tw-border-opacity: 1;
+  border-color: hsl(206 94% 87% / var(--tw-border-opacity));
+}
+
 .bg-light-blue {
   --tw-bg-opacity: 1;
   background-color: hsl(206 94% 87% / var(--tw-bg-opacity));
