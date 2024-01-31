@@ -23,6 +23,9 @@
         @apply font-ubuntuRegular text-700 text-neutral-700
     }
     .sidebar__circle{
-        @apply p-3 bg-red
+        @apply rounded-full border-white border p-4 relative
+    }
+    .sidebar__circle__a{
+        @apply absolute top-1 left-3 text-500 text-white
     }
 }
