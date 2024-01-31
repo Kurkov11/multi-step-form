@@ -13,5 +13,18 @@ personalForm.addEventListener("submit", function(e){
     const nameValue = nameIn.value;
     const emailValue = emailIn.value;
     const phoneValue = phoneIn.value;
-    
+
+    let error = false;
+    if(nameValue === ""){
+        error = true;
+    }
+    if(emailValue === ""){
+        error = true;
+    }
+    if(phoneValue === ""){
+        error = true;
+    }
+    if(error){
+        e.preventDefault();
+    }
 });
