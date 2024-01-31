@@ -9,6 +9,6 @@ const phoneEmpty = document.querySelector('#phone__empty');
 const personalSubmit = document.querySelector('#personal-submit');
 
 const personalForm = document.querySelector('#personal-info');
-personalForm.addEventListener("submit", function(){
+personalForm.addEventListener("submit", function(e){
     
 });
