@@ -650,12 +650,8 @@ label {
   display: flex;
 }
 
-.h-full {
-  height: 100%;
-}
-
-.h-screen {
-  height: 100vh;
+.h-almostScreen {
+  height: 90vh;
 }
 
 .w-fit {

@@ -30,6 +30,9 @@ module.exports = {
       },
       inset: {
         "26": "6.5rem"
+      },
+      height: {
+        "almostScreen": "90vh"
       }
     },
   },
