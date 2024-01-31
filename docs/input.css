@@ -34,7 +34,13 @@
     .card{
         @apply mx-side-margin bg-white rounded-xl absolute top-26 p-6
     }
+    input{
+        @apply placeholder:text-600 placeholder:text-neutral-700 px-5 py-2 block w-full
+    }
     .border-input{
-        @apply block border rounded-md px-3 py-2 w-full
+        @apply border rounded-md border-neutral-400
+    }
+    label{
+        @apply text-dark-blue font-ubuntuRegular text-500
     }
 }
