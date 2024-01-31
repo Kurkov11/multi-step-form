@@ -538,6 +538,20 @@ label {
   color: hsl(213 96% 18% / var(--tw-text-opacity));
 }
 
+.dark-blue-button {
+  border-radius: 0.125rem;
+  --tw-bg-opacity: 1;
+  background-color: hsl(213 96% 18% / var(--tw-bg-opacity));
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.625rem;
+  padding-bottom: 0.625rem;
+  font-family: Ubuntu-Regular, sans-serif;
+  font-size: 0.813rem;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
