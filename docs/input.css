@@ -31,4 +31,7 @@
     .sidebar__circle__a{
         @apply absolute top-1 left-3 text-500 text-white
     }
+    .card{
+        @apply mx-side-margin bg-white rounded-xl absolute top-26 p-6
+    }
 }

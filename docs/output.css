@@ -486,6 +486,17 @@ h2 {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.card {
+  position: absolute;
+  top: 6.5rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  border-radius: 0.75rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  padding: 1.5rem;
+}
+
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -607,14 +618,14 @@ h2 {
   gap: 1rem;
 }
 
-.bg-red {
-  --tw-bg-opacity: 1;
-  background-color: hsl(354 84% 57% / var(--tw-bg-opacity));
-}
-
 .bg-light-blue {
   --tw-bg-opacity: 1;
   background-color: hsl(206 94% 87% / var(--tw-bg-opacity));
+}
+
+.bg-neutral-300 {
+  --tw-bg-opacity: 1;
+  background-color: hsl(217 100% 97% / var(--tw-bg-opacity));
 }
 
 .py-8 {
