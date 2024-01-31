@@ -445,6 +445,7 @@ video {
 }
 
 h1 {
+  margin-bottom: 0.5rem;
   font-family: Ubuntu-Bold, sans-serif;
   font-size: 1.5rem;
   --tw-text-opacity: 1;
@@ -452,6 +453,7 @@ h1 {
 }
 
 h2 {
+  margin-bottom: 1.25rem;
   font-family: Ubuntu-Regular, sans-serif;
   font-size: 1.125rem;
   --tw-text-opacity: 1;
