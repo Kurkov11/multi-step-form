@@ -503,6 +503,7 @@ h2 {
 }
 
 input {
+  margin-bottom: 0.5rem;
   display: block;
   width: 100%;
   padding-left: 1.25rem;
