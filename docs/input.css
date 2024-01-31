@@ -28,7 +28,7 @@
     .sidebar__circle{
         @apply rounded-full border-white border p-4 relative
     }
-    .sidebar__circle__a{
+    .sidebar__circle__number{
         @apply absolute top-1.5 left-3 text-500 text-white
     }
     .card{

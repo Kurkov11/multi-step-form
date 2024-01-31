@@ -479,7 +479,7 @@ h2 {
   padding: 1rem;
 }
 
-.sidebar__circle__a {
+.sidebar__circle__number {
   position: absolute;
   top: 0.375rem;
   left: 0.75rem;
@@ -654,10 +654,6 @@ label {
 
 .ml-auto {
   margin-left: auto;
-}
-
-.mr-5 {
-  margin-right: 1.25rem;
 }
 
 .mr-side-margin {
