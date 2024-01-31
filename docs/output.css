@@ -652,18 +652,6 @@ label {
   --tw-backdrop-sepia:  ;
 }
 
-.ml-auto {
-  margin-left: auto;
-}
-
-.mr-side-margin {
-  margin-right: 1rem;
-}
-
-.mt-side-margin {
-  margin-top: 1rem;
-}
-
 .block {
   display: block;
 }
@@ -680,9 +668,25 @@ label {
   height: 100%;
 }
 
+.h-restOfScreen {
+  height: 13vh;
+}
+
 .w-fit {
   width: -moz-fit-content;
   width: fit-content;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.items-start {
+  align-items: flex-start;
+}
+
+.justify-end {
+  justify-content: flex-end;
 }
 
 .gap-4 {

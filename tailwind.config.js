@@ -32,7 +32,8 @@ module.exports = {
         "26": "6.5rem"
       },
       height: {
-        "almostScreen": "87vh"
+        "almostScreen": "87vh",
+        "restOfScreen": "13vh"
       }
     },
   },
