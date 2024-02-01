@@ -502,7 +502,7 @@ h2 {
   padding-bottom: 1.75rem;
 }
 
-input {
+.personal-input {
   margin-bottom: 0.5rem;
   display: block;
   width: 100%;
@@ -512,19 +512,19 @@ input {
   padding-bottom: 0.5rem;
 }
 
-input::-moz-placeholder {
+.personal-input::-moz-placeholder {
   font-size: 0.938rem;
   --tw-text-opacity: 1;
   color: hsl(231 11% 63% / var(--tw-text-opacity));
 }
 
-input::placeholder {
+.personal-input::placeholder {
   font-size: 0.938rem;
   --tw-text-opacity: 1;
   color: hsl(231 11% 63% / var(--tw-text-opacity));
 }
 
-input:focus {
+.personal-input:focus {
   outline-style: solid;
   outline-color: hsl(243, 100%, 62%);
 }
