@@ -33,18 +33,27 @@
         <h1>Personal info</h1>
         <h2>Please provide your name, email address, and phone number.</h2>
         <form action="#" id="personal-info">
-          <label for="name">Name</label>
+          <div class="flex justify-between">
+            <label for="name">Name</label>
+            <span class="error" id="name__empty">This field is required</span>
+          </div>
           <input class="border-input" type="text" name="name" id="name" placeholder="e.g. Stephen King">
-          <label for="email">Email Address</label>
+          <div class="flex justify-between">
+            <label for="email">Email Address</label>
+            <span class="error" id="email__empty">This field is required</span>
+          </div>
           <input class="border-input" type="email" name="email" id="email" placeholder="e.g. stephenking@lorem.com">
-          <label for="phone">Phone Number</label>
-          <input class="border-input" type="tel" name="phone" id="phone" placeholder="e.g. +1 234 567 890">
+          <div class="flex justify-between">
+            <label for="phone">Phone Number</label>
+            <span class="error" id="phone__empty">This field is required</span>
+          </div>
+          <input class="border-input" type="text" name="phone" id="phone" placeholder="e.g. +1 234 567 890">
         </form>
       </div>
     </main>
   </div> <!--div tag used for background color END-->
   <!-- Step 1 start -->
-  <div class="w-full h-restOfScreen flex justify-end items-center"><input type="submit" value="Next Step" form="personal-info" class="dark-blue-button block w-fit h-fit mr-side-margin"></div>
+  <div class="w-full h-restOfScreen flex justify-end items-center"><input type="submit" value="Next Step" form="personal-info" id="personal-submit" class="dark-blue-button block w-fit h-fit mr-side-margin"></div>
 
   <!-- Step 1 end -->
 
@@ -120,5 +129,7 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div>
+
+  <script src="index.js"></script>
 </body>
 </html>
