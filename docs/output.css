@@ -565,14 +565,6 @@ label {
   color: hsl(354 84% 57% / var(--tw-text-opacity));
 }
 
-.\!error {
-  display: none;
-  font-family: Ubuntu-Medium, sans-serif;
-  font-size: 0.813rem;
-  --tw-text-opacity: 1;
-  color: hsl(354 84% 57% / var(--tw-text-opacity));
-}
-
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -673,8 +665,24 @@ label {
   --tw-backdrop-sepia:  ;
 }
 
+.mr-2 {
+  margin-right: 0.5rem;
+}
+
 .mr-side-margin {
   margin-right: 1rem;
+}
+
+.mr-4 {
+  margin-right: 1rem;
+}
+
+.mr-3 {
+  margin-right: 0.75rem;
+}
+
+.mr-3\.5 {
+  margin-right: 0.875rem;
 }
 
 .block {
@@ -687,6 +695,10 @@ label {
 
 .flex {
   display: flex;
+}
+
+.grid {
+  display: grid;
 }
 
 .hidden {
@@ -723,12 +735,24 @@ label {
   justify-content: flex-end;
 }
 
+.justify-center {
+  justify-content: center;
+}
+
 .justify-between {
   justify-content: space-between;
 }
 
 .gap-4 {
   gap: 1rem;
+}
+
+.gap-2 {
+  gap: 0.5rem;
+}
+
+.gap-3 {
+  gap: 0.75rem;
 }
 
 .border-light-blue {
@@ -744,6 +768,29 @@ label {
 .bg-neutral-300 {
   --tw-bg-opacity: 1;
   background-color: hsl(217 100% 97% / var(--tw-bg-opacity));
+}
+
+.bg-neutral-400 {
+  --tw-bg-opacity: 1;
+  background-color: hsl(229 24% 87% / var(--tw-bg-opacity));
+}
+
+.bg-neutral-700 {
+  --tw-bg-opacity: 1;
+  background-color: hsl(231 11% 63% / var(--tw-bg-opacity));
+}
+
+.bg-neutral-200 {
+  --tw-bg-opacity: 1;
+  background-color: hsl(231 100% 99% / var(--tw-bg-opacity));
+}
+
+.p-3 {
+  padding: 0.75rem;
+}
+
+.p-2 {
+  padding: 0.5rem;
 }
 
 .py-8 {
