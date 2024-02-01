@@ -29,11 +29,13 @@ module.exports = {
         "side-margin": "1rem"
       },
       inset: {
-        "26": "6.5rem"
+        "26": "6.5rem",
+        "1.25": "0.3125rem"
       },
       height: {
         "almostScreen": "87vh",
-        "restOfScreen": "13vh"
+        "restOfScreen": "13vh",
+        "5.5": "1.375rem"
       },
       outlineWidth:{
         "0.5": "0.1px"
