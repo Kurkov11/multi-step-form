@@ -25,6 +25,9 @@
     h2 {
         @apply text-700 mb-5
     }
+    h3{
+        @apply font-ubuntuMedium text-dark-blue;
+    }
     .sidebar {
         @apply flex justify-center bg-[url('../assets/images/bg-sidebar-mobile.svg')] bg-cover bg-no-repeat bg-center pb-20
     }

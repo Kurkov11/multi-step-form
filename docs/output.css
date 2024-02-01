@@ -463,6 +463,12 @@ h2 {
   font-size: 1.125rem;
 }
 
+h3 {
+  font-family: Ubuntu-Medium, sans-serif;
+  --tw-text-opacity: 1;
+  color: hsl(213 96% 18% / var(--tw-text-opacity));
+}
+
 .sidebar {
   display: flex;
   justify-content: center;
@@ -766,6 +772,10 @@ label {
 .py-8 {
   padding-top: 2rem;
   padding-bottom: 2rem;
+}
+
+.text-600 {
+  font-size: 0.938rem;
 }
 
 .text-dark-blue {
