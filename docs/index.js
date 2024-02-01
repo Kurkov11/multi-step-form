@@ -16,20 +16,26 @@ personalForm.addEventListener("submit", function(e){
     
     if(nameValue === ""){
         e.preventDefault();
-        nameEmpty.style.display = 'inline' //default
+        nameEmpty.style.display = 'inline'; //default
+        nameIn.style.borderColor = 'red';
     }else{
-        nameEmpty.style.display = 'none'
+        nameEmpty.style.display = 'none';
+        nameIn.style.borderColor = 'hsl(229 24% 87% / var(--tw-border-opacity))';
     }
     if(emailValue === ""){
         e.preventDefault();
-        emailEmpty.style.display = 'inline' //default
+        emailEmpty.style.display = 'inline'; //default
+        emailIn.style.borderColor = 'red';
     }else{
-        emailEmpty.style.display = 'none'
+        emailEmpty.style.display = 'none';
+        emailIn.style.borderColor = 'hsl(229 24% 87% / var(--tw-border-opacity))';
     }
     if(phoneValue === ""){
         e.preventDefault();
-        phoneEmpty.style.display = 'inline' //default
+        phoneEmpty.style.display = 'inline'; //default
+        phoneIn.style.borderColor = 'red';
     }else{
-        phoneEmpty.style.display = 'none'
+        phoneEmpty.style.display = 'none';
+        phoneIn.style.borderColor = 'hsl(229 24% 87% / var(--tw-border-opacity))';
     }
 });
