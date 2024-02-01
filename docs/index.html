@@ -29,7 +29,7 @@
     
     <!-- Sidebar end -->
     <main>
-      <div class="card">
+      <div class="card hidden">
         <h1>Personal info</h1>
         <h2>Please provide your name, email address, and phone number.</h2>
         <form action="#" id="personal-info">
@@ -50,10 +50,16 @@
           <input class="border-input" type="text" name="phone" id="phone" placeholder="e.g. +1 234 567 890">
         </form>
       </div>
+
+      <div class="card">
+        
+      </div>
     </main>
   </div> <!--div tag used for background color END-->
   <!-- Step 1 start -->
-  <div class="w-full h-restOfScreen flex justify-end items-center"><input type="submit" value="Next Step" form="personal-info" id="personal-submit" class="dark-blue-button block w-fit h-fit mr-side-margin"></div>
+  <div class="w-full h-restOfScreen flex justify-end items-center">
+    <input type="submit" value="Next Step" form="personal-info" id="personal-submit" class="dark-blue-button block w-fit h-fit mr-side-margin">
+  </div>
 
   <!-- Step 1 end -->
 
