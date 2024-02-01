@@ -37,7 +37,7 @@
     input{
         @apply placeholder:text-600 placeholder:text-neutral-700 px-5 py-2 mb-2 block w-full focus:outline focus:outline-purple-blue
     }
-    .border-input{
+    .gray-border{
         @apply border rounded-md border-neutral-400
     }
     label{

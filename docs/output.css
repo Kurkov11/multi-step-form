@@ -529,7 +529,7 @@ input:focus {
   outline-color: hsl(243, 100%, 62%);
 }
 
-.border-input {
+.gray-border {
   border-radius: 0.375rem;
   border-width: 1px;
   --tw-border-opacity: 1;
@@ -665,24 +665,16 @@ label {
   --tw-backdrop-sepia:  ;
 }
 
-.mr-2 {
-  margin-right: 0.5rem;
-}
-
-.mr-side-margin {
-  margin-right: 1rem;
-}
-
-.mr-4 {
-  margin-right: 1rem;
-}
-
 .mr-3 {
   margin-right: 0.75rem;
 }
 
 .mr-3\.5 {
   margin-right: 0.875rem;
+}
+
+.mr-side-margin {
+  margin-right: 1rem;
 }
 
 .block {
@@ -743,16 +735,12 @@ label {
   justify-content: space-between;
 }
 
-.gap-4 {
-  gap: 1rem;
-}
-
-.gap-2 {
-  gap: 0.5rem;
-}
-
 .gap-3 {
   gap: 0.75rem;
+}
+
+.gap-4 {
+  gap: 1rem;
 }
 
 .border-light-blue {
@@ -770,27 +758,8 @@ label {
   background-color: hsl(217 100% 97% / var(--tw-bg-opacity));
 }
 
-.bg-neutral-400 {
-  --tw-bg-opacity: 1;
-  background-color: hsl(229 24% 87% / var(--tw-bg-opacity));
-}
-
-.bg-neutral-700 {
-  --tw-bg-opacity: 1;
-  background-color: hsl(231 11% 63% / var(--tw-bg-opacity));
-}
-
-.bg-neutral-200 {
-  --tw-bg-opacity: 1;
-  background-color: hsl(231 100% 99% / var(--tw-bg-opacity));
-}
-
 .p-3 {
   padding: 0.75rem;
-}
-
-.p-2 {
-  padding: 0.5rem;
 }
 
 .py-8 {
