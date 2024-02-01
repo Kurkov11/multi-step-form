@@ -23,7 +23,7 @@
         @apply font-ubuntuBold text-900 text-dark-blue mb-2
     }
     h2 {
-        @apply∂ text-700 mb-5
+        @apply text-700 mb-5
     }
     .sidebar {
         @apply flex justify-center bg-[url('../assets/images/bg-sidebar-mobile.svg')] bg-cover bg-no-repeat bg-center pb-20
