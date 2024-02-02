@@ -460,7 +460,7 @@ h1 {
 
 h2 {
   margin-bottom: 1.25rem;
-  font-size: 1.125rem;
+  font-size: 1.063;
 }
 
 h3 {
@@ -816,18 +816,6 @@ label {
   border-radius: 9999px;
 }
 
-.rounded {
-  border-radius: 0.25rem;
-}
-
-.rounded-md {
-  border-radius: 0.375rem;
-}
-
-.rounded-xl {
-  border-radius: 0.75rem;
-}
-
 .rounded-lg {
   border-radius: 0.5rem;
 }
@@ -866,35 +854,6 @@ label {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-neutral-200 {
-  --tw-bg-opacity: 1;
-  background-color: hsl(231 100% 99% / var(--tw-bg-opacity));
-}
-
-.bg-opacity-90 {
-  --tw-bg-opacity: 0.9;
-}
-
-.bg-opacity-0 {
-  --tw-bg-opacity: 0;
-}
-
-.bg-opacity-25 {
-  --tw-bg-opacity: 0.25;
-}
-
-.bg-opacity-45 {
-  --tw-bg-opacity: 0.45;
-}
-
-.bg-opacity-30 {
-  --tw-bg-opacity: 0.3;
-}
-
-.bg-opacity-35 {
-  --tw-bg-opacity: 0.35;
-}
-
 .bg-opacity-40 {
   --tw-bg-opacity: 0.4;
 }
@@ -908,24 +867,12 @@ label {
   padding-bottom: 2rem;
 }
 
-.font-ubuntuBold {
-  font-family: Ubuntu-Bold, sans-serif;
-}
-
 .font-ubuntuMedium {
   font-family: Ubuntu-Medium, sans-serif;
 }
 
-.font-ubuntuRegular {
-  font-family: Ubuntu-Regular, sans-serif;
-}
-
 .text-600 {
   font-size: 0.938rem;
-}
-
-.text-900 {
-  font-size: 1.5rem;
 }
 
 .text-dark-blue {
