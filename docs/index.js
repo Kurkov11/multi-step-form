@@ -48,3 +48,11 @@ personalForm.addEventListener("submit", function (e) {
     phoneIn.style.outlineWidth = "1px";
   }
 });
+
+step2toggle.addEventListener("change", function () {
+  if (this.checked) {
+    console.log("checked!");
+  } else {
+    console.log("not checked...");
+  }
+});
