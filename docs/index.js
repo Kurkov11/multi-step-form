@@ -13,6 +13,8 @@ const personalForm = document.querySelector("#personal-info");
 const step2toggle = document.querySelector("#step2-toggle");
 const step2toggleDot = document.querySelector("#step2-toggle-dot");
 
+//personal info - start
+
 personalForm.addEventListener("submit", function (e) {
   const nameValue = nameIn.value;
   const emailValue = emailIn.value;
@@ -50,6 +52,10 @@ personalForm.addEventListener("submit", function (e) {
   }
 });
 
+//personal info - end
+
+//select your plan - start
+
 step2toggle.addEventListener("change", function () {
   if (this.checked) {
     console.log("checked!");
@@ -60,7 +66,6 @@ step2toggle.addEventListener("change", function () {
   }
 });
 
-//Select your plan
 const planTypes = Array.from(document.querySelectorAll(".plan-type"));
 console.log(planTypes);
 planTypes.forEach((planType) => {
@@ -76,3 +81,5 @@ planTypes.forEach((planType) => {
     console.log(planType);
   };
 });
+
+//select your plan - end
