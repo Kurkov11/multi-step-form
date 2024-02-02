@@ -11,6 +11,7 @@ const personalSubmit = document.querySelector("#personal-submit");
 const personalForm = document.querySelector("#personal-info");
 
 const step2toggle = document.querySelector("#step2-toggle");
+const step2toggleDot = document.querySelector("#step2-toggle-dot");
 
 personalForm.addEventListener("submit", function (e) {
   const nameValue = nameIn.value;
