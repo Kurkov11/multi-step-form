@@ -6,7 +6,7 @@ const nameEmpty = document.querySelector("#name__empty");
 const emailEmpty = document.querySelector("#email__empty");
 const phoneEmpty = document.querySelector("#phone__empty");
 
-const personalSubmit = document.querySelector("#personal-submit");
+const submitButton = document.querySelector("#submit-button");
 
 const personalForm = document.querySelector("#personal-info");
 
