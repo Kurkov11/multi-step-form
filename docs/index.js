@@ -59,3 +59,20 @@ step2toggle.addEventListener("change", function () {
     step2toggleDot.style.left = "5px"; //equivalent of 1.25 in tailwind variables
   }
 });
+
+//Select your plan
+const planTypes = Array.from(document.querySelectorAll(".plan-type"));
+console.log(planTypes);
+planTypes.forEach((planType) => {
+  planType.onclick = function () {
+    planType.style.borderColor = "hsl(243, 100%, 62%)"; //hard coded purple blue from taiwlind config. Should be dry code...
+    planType.style.backgroundColor = "hsl(217, 100%, 97%)"; //hard coded neutral-300 from tailwind config. Should be dry code...
+    for (let i = 0; i < planTypes.length; i++) {
+      if (planType !== planTypes[i]) {
+        planTypes[i].style.borderColor = "hsl(229, 24%, 87%)"; //hard coded neutral-400 from taiwlind config. Should be dry code...
+        planTypes[i].style.backgroundColor = "white";
+      }
+    }
+    console.log(planType);
+  };
+});
