@@ -16,6 +16,13 @@ const step2toggleDot = document.querySelector("#step2-toggle-dot");
 const cards = Array.from(document.getElementsByClassName("card"));
 let currentCardIndex = 0;
 
+const sidebarCircles = Array.from(
+  document.getElementsByClassName("sidebar__circle")
+);
+const sidebarCirclesNumbers = Array.from(
+  document.getElementsByClassName("sidebar__circle__number")
+);
+
 //personal info - start
 
 personalForm.addEventListener("submit", function (e) {
@@ -55,6 +62,16 @@ personalForm.addEventListener("submit", function (e) {
     phoneIn.style.outlineWidth = "1px";
     cards[currentCardIndex].style.display = "hidden";
     cards[currentCardIndex + 1].style.display = "block";
+
+    sidebarCircles[currentCardIndex].style.backgroundColor = "transparent";
+    sidebarCircles[currentCardIndex].style.borderColor = "white";
+    sidebarCirclesNumbers[currentCardIndex].style.color = "white";
+
+    sidebarCircles[currentCardIndex + 1].style.backgroundColor =
+      "hsl(206 94% 87%";
+    sidebarCircles[currentCardIndex + 1].style.borderColor = "hsl(206 94% 87%";
+    sidebarCirclesNumbers[currentCardIndex + 1].style.color =
+      "hsl(213, 96%, 18%)";
   }
 });
 
