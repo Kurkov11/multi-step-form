@@ -13,6 +13,9 @@ const personalForm = document.querySelector("#personal-info");
 const step2toggle = document.querySelector("#step2-toggle");
 const step2toggleDot = document.querySelector("#step2-toggle-dot");
 
+const cards = Array.from(document.getElementsByClassName("card"));
+let currentCardIndex = 0;
+
 //personal info - start
 
 personalForm.addEventListener("submit", function (e) {
@@ -46,9 +49,12 @@ personalForm.addEventListener("submit", function (e) {
     phoneIn.style.borderColor = "red";
     phoneIn.style.outlineWidth = "0";
   } else {
+    e.preventDefault();
     phoneEmpty.style.display = "none";
     phoneIn.style.borderColor = "hsl(229 24% 87% / var(--tw-border-opacity))";
     phoneIn.style.outlineWidth = "1px";
+    cards[currentCardIndex].style.display = "hidden";
+    cards[currentCardIndex + 1].style.display = "block";
   }
 });
 
