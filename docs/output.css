@@ -870,6 +870,10 @@ label {
   font-size: 0.938rem;
 }
 
+.text-900 {
+  font-size: 1.5rem;
+}
+
 .text-dark-blue {
   --tw-text-opacity: 1;
   color: hsl(213 96% 18% / var(--tw-text-opacity));
