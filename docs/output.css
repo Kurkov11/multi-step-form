@@ -716,6 +716,22 @@ label {
   left: -0.3125rem;
 }
 
+.bottom-0 {
+  bottom: 0px;
+}
+
+.top-0 {
+  top: 0px;
+}
+
+.bottom-auto {
+  bottom: auto;
+}
+
+.top-auto {
+  top: auto;
+}
+
 .mr-3 {
   margin-right: 0.75rem;
 }
