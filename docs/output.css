@@ -848,6 +848,14 @@ label {
   gap: 1rem;
 }
 
+.gap-5 {
+  gap: 1.25rem;
+}
+
+.gap-6 {
+  gap: 1.5rem;
+}
+
 .rounded-full {
   border-radius: 9999px;
 }
@@ -892,6 +900,10 @@ label {
 
 .text-600 {
   font-size: 0.938rem;
+}
+
+.text-500 {
+  font-size: 0.813rem;
 }
 
 .text-dark-blue {
