@@ -31,10 +31,11 @@ module.exports = {
       inset: {
         26: "6.5rem",
         1.25: "0.3125rem",
+        28: "5.85rem",
       },
       height: {
-        almostScreen: "87vh",
-        restOfScreen: "13vh",
+        almostScreen: "89vh",
+        restOfScreen: "11vh",
         5.5: "1.375rem",
       },
       outlineWidth: {

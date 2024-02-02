@@ -476,7 +476,7 @@ h3 {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  padding-bottom: 5rem;
+  padding-bottom: 4rem;
 }
 
 .sidebar__circle {
@@ -499,7 +499,7 @@ h3 {
 
 .card {
   position: absolute;
-  top: 6.5rem;
+  top: 5.85rem;
   margin-left: 1rem;
   margin-right: 1rem;
   border-radius: 0.75rem;
@@ -700,6 +700,10 @@ label {
   top: auto;
 }
 
+.ml-side-margin {
+  margin-left: 1rem;
+}
+
 .mr-3 {
   margin-right: 0.75rem;
 }
@@ -714,10 +718,6 @@ label {
 
 .mt-6 {
   margin-top: 1.5rem;
-}
-
-.ml-side-margin {
-  margin-left: 1rem;
 }
 
 .block {
@@ -753,7 +753,7 @@ label {
 }
 
 .h-almostScreen {
-  height: 87vh;
+  height: 89vh;
 }
 
 .h-fit {
@@ -762,7 +762,7 @@ label {
 }
 
 .h-restOfScreen {
-  height: 13vh;
+  height: 11vh;
 }
 
 .w-10 {
@@ -790,10 +790,6 @@ label {
 
 .items-center {
   align-items: center;
-}
-
-.justify-end {
-  justify-content: flex-end;
 }
 
 .justify-center {
@@ -877,10 +873,6 @@ label {
 
 .text-600 {
   font-size: 0.938rem;
-}
-
-.text-500 {
-  font-size: 0.813rem;
 }
 
 .text-dark-blue {

@@ -29,7 +29,7 @@
     @apply font-ubuntuMedium text-dark-blue;
   }
   .sidebar {
-    @apply flex justify-center bg-[url('../assets/images/bg-sidebar-mobile.svg')] bg-cover bg-no-repeat bg-center pb-20;
+    @apply flex justify-center bg-[url('../assets/images/bg-sidebar-mobile.svg')] bg-cover bg-no-repeat bg-center pb-16;
   }
   .sidebar__circle {
     @apply rounded-full border-white border p-4 relative;
@@ -38,7 +38,7 @@
     @apply absolute top-1.5 left-3 text-500 text-white;
   }
   .card {
-    @apply mx-side-margin bg-white rounded-xl absolute top-26 px-6 py-7;
+    @apply mx-side-margin bg-white rounded-xl absolute top-28 px-6 py-7;
   }
   .personal-input {
     @apply placeholder:text-600 placeholder:text-neutral-700 px-5 py-2 mb-2 block w-full focus:outline focus:outline-purple-blue;
