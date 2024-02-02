@@ -1,105 +1,174 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  <link rel="stylesheet" href="output.css">
-  <title>Frontend Mentor | Multi-step form</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="output.css" />
+    <title>Frontend Mentor | Multi-step form</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center;}
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-
-  <!-- Sidebar start -->
-  <div class="bg-neutral-300 h-almostScreen"> <!--div tag used for background color START-->
-    <nav class="sidebar">
-      <ul class="flex gap-4 py-8">
-        <li><div class="sidebar__circle bg-light-blue border-light-blue"><span class="sidebar__circle__number text-dark-blue">1</span></div></li>
-        <li><div class="sidebar__circle"><span class="sidebar__circle__number">2</span></div></li>
-        <li><div class="sidebar__circle"><span class="sidebar__circle__number">3</span></div></li>
-        <li><div class="sidebar__circle"><span class="sidebar__circle__number">4</span></div></li>
-      </ul>
-    </nav>
-    
-    <!-- Sidebar end -->
-    <main>
-      <div class="card hidden">
-        <h1>Personal info</h1>
-        <h2>Please provide your name, email address, and phone number.</h2>
-        <form action="#" id="personal-info">
-          <div class="flex justify-between">
-            <label for="name">Name</label>
-            <span class="error" id="name__empty">This field is required</span>
-          </div>
-          <input class="gray-border personal-input" type="text" name="name" id="name" placeholder="e.g. Stephen King">
-          <div class="flex justify-between">
-            <label for="email">Email Address</label>
-            <span class="error" id="email__empty">This field is required</span>
-          </div>
-          <input class="gray-border personal-input" type="email" name="email" id="email" placeholder="e.g. stephenking@lorem.com">
-          <div class="flex justify-between">
-            <label for="phone">Phone Number</label>
-            <span class="error" id="phone__empty">This field is required</span>
-          </div>
-          <input class="gray-border personal-input" type="text" name="phone" id="phone" placeholder="e.g. +1 234 567 890">
-        </form>
-      </div>
-
-      <div class="card">
-        <h1>Select your plan</h1>
-        <h2>You have the option of monthly or yearly billing.</h2>
-
-        <div class="grid gap-3">
-          <div class="gray-border flex p-3">
-            <img src="../assets/images/icon-arcade.svg" alt="" class="mr-3.5">
-            <div>
-              <h3>Arcade</h3>
-              <p class="text-600">$9/mo</p>
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Sidebar start -->
+    <div class="bg-neutral-300 h-almostScreen">
+      <!--div tag used for background color START-->
+      <nav class="sidebar">
+        <ul class="flex gap-4 py-8">
+          <li>
+            <div class="sidebar__circle bg-light-blue border-light-blue">
+              <span class="sidebar__circle__number text-dark-blue">1</span>
             </div>
-          </div>
-          <div class="gray-border flex p-3">
-            <img src="../assets/images/icon-advanced.svg" alt="" class="mr-3.5">
-            <div>
-              <h3>Advanced</h3>
-              <p class="text-600">$12/mo</p>
+          </li>
+          <li>
+            <div class="sidebar__circle">
+              <span class="sidebar__circle__number">2</span>
             </div>
-          </div>
-          <div class="gray-border flex p-3">
-            <img src="../assets/images/icon-pro.svg" alt="" class="mr-3.5">
-            <div>
-              <h3>Pro</h3>
-              <p class="text-600">$15/mo</p>
+          </li>
+          <li>
+            <div class="sidebar__circle">
+              <span class="sidebar__circle__number">3</span>
             </div>
-          </div>
+          </li>
+          <li>
+            <div class="sidebar__circle">
+              <span class="sidebar__circle__number">4</span>
+            </div>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Sidebar end -->
+      <main>
+        <div class="card hidden">
+          <h1>Personal info</h1>
+          <h2>Please provide your name, email address, and phone number.</h2>
+          <form action="#" id="personal-info">
+            <div class="flex justify-between">
+              <label for="name">Name</label>
+              <span class="error" id="name__empty">This field is required</span>
+            </div>
+            <input
+              class="gray-border personal-input"
+              type="text"
+              name="name"
+              id="name"
+              placeholder="e.g. Stephen King"
+            />
+            <div class="flex justify-between">
+              <label for="email">Email Address</label>
+              <span class="error" id="email__empty"
+                >This field is required</span
+              >
+            </div>
+            <input
+              class="gray-border personal-input"
+              type="email"
+              name="email"
+              id="email"
+              placeholder="e.g. stephenking@lorem.com"
+            />
+            <div class="flex justify-between">
+              <label for="phone">Phone Number</label>
+              <span class="error" id="phone__empty"
+                >This field is required</span
+              >
+            </div>
+            <input
+              class="gray-border personal-input"
+              type="text"
+              name="phone"
+              id="phone"
+              placeholder="e.g. +1 234 567 890"
+            />
+          </form>
         </div>
 
-        <form action="#" class="flex justify-center bg-neutral-300">
-          <span>Monthly</span>
-          <div class="relative">
-            <input type="checkbox" class="appearance-none   border w-10 h-5.5 rounded-full bg-dark-blue">
-            <div class="top-1.25 left-1.25 w-3 h-3 bg-white rounded-full absolute"></div>
+        <div class="card">
+          <h1>Select your plan</h1>
+          <h2>You have the option of monthly or yearly billing.</h2>
+
+          <div class="grid gap-3">
+            <div class="gray-border flex p-3">
+              <img
+                src="../assets/images/icon-arcade.svg"
+                alt=""
+                class="mr-3.5"
+              />
+              <div>
+                <h3>Arcade</h3>
+                <p class="text-600">$9/mo</p>
+              </div>
+            </div>
+            <div class="gray-border flex p-3">
+              <img
+                src="../assets/images/icon-advanced.svg"
+                alt=""
+                class="mr-3.5"
+              />
+              <div>
+                <h3>Advanced</h3>
+                <p class="text-600">$12/mo</p>
+              </div>
+            </div>
+            <div class="gray-border flex p-3">
+              <img src="../assets/images/icon-pro.svg" alt="" class="mr-3.5" />
+              <div>
+                <h3>Pro</h3>
+                <p class="text-600">$15/mo</p>
+              </div>
+            </div>
           </div>
-          <span>Yearly</span>
-        </form>
-      </div>
-    </main>
-  </div> <!--div tag used for background color END-->
-  <!-- Step 1 start -->
-  <div class="w-full h-restOfScreen flex justify-end items-center">
-    <input type="submit" value="Next Step" form="personal-info" id="personal-submit" class="dark-blue-button block w-fit h-fit mr-side-margin">
-  </div>
 
-  <!-- Step 1 end -->
+          <form action="#" class="flex justify-center bg-neutral-300">
+            <span>Monthly</span>
+            <div class="relative">
+              <input
+                type="checkbox"
+                class="appearance-none border w-10 h-5.5 rounded-full bg-dark-blue"
+              />
+              <div
+                class="top-1.25 left-1.25 w-3 h-3 bg-white rounded-full absolute"
+              ></div>
+            </div>
+            <span>Yearly</span>
+          </form>
+        </div>
+      </main>
+    </div>
+    <!--div tag used for background color END-->
+    <!-- Step 1 start -->
+    <div class="w-full h-restOfScreen flex justify-end items-center">
+      <input
+        type="submit"
+        value="Next Step"
+        form="personal-info"
+        id="personal-submit"
+        class="dark-blue-button block w-fit h-fit mr-side-margin"
+      />
+    </div>
 
-  <!-- Step 2 start -->
+    <!-- Step 1 end -->
 
-  <!-- Select your plan
+    <!-- Step 2 start -->
+
+    <!-- Select your plan
   You have the option of monthly or yearly billing.
 
   Arcade
@@ -117,11 +186,11 @@
   Go Back
   Next Step -->
 
-  <!-- Step 2 end -->
+    <!-- Step 2 end -->
 
-  <!-- Step 3 start -->
+    <!-- Step 3 start -->
 
-  <!-- Pick add-ons
+    <!-- Pick add-ons
   Add-ons help enhance your gaming experience.
 
   Online service
@@ -139,37 +208,39 @@
   Go Back
   Next Step -->
 
-  <!-- Step 3 end -->
+    <!-- Step 3 end -->
 
-  <!-- Step 4 start -->
+    <!-- Step 4 start -->
 
-  <!-- Finishing up
+    <!-- Finishing up
   Double-check everything looks OK before confirming. -->
 
-  <!-- Dynamically add subscription and add-on selections here -->
+    <!-- Dynamically add subscription and add-on selections here -->
 
-  <!-- Total (per month/year)
+    <!-- Total (per month/year)
 
   Go Back
   Confirm -->
 
-  <!-- Step 4 end -->
+    <!-- Step 4 end -->
 
-  <!-- Step 5 start -->
+    <!-- Step 5 start -->
 
-  <!-- Thank you!
+    <!-- Thank you!
 
   Thanks for confirming your subscription! We hope you have fun 
   using our platform. If you ever need support, please feel free 
   to email us at support@loremgaming.com. -->
 
-  <!-- Step 5 end -->
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+    <!-- Step 5 end -->
 
-  <script src="index.js"></script>
-</body>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div>
+
+    <script src="index.js"></script>
+  </body>
 </html>
