@@ -53,7 +53,9 @@ personalForm.addEventListener("submit", function (e) {
 step2toggle.addEventListener("change", function () {
   if (this.checked) {
     console.log("checked!");
+    step2toggleDot.style.left = "23px"; //equivalent of 1.25 in tailwind variables
   } else {
     console.log("not checked...");
+    step2toggleDot.style.left = "5px"; //equivalent of 1.25 in tailwind variables
   }
 });
