@@ -84,14 +84,21 @@ step2toggle.addEventListener("change", function () {
     document.getElementById("monthly").classList.toggle("text-dark-blue");
     document.getElementById("yearly").classList.toggle("text-dark-blue");
   };
+  const recurringCosts = document.querySelectorAll(".recurring-cost");
   if (this.checked) {
     console.log("checked!");
     step2toggleDot.style.left = "23px"; //equivalent of 1.25 in tailwind variables
     toggleMonthlyYearly();
+    recurringCosts[0].textContent = "$90/yr";
+    recurringCosts[1].textContent = "$120/yr";
+    recurringCosts[2].textContent = "$150/yr";
   } else {
     console.log("not checked...");
     step2toggleDot.style.left = "5px"; //equivalent of 1.25 in tailwind variables
     toggleMonthlyYearly();
+    recurringCosts[0].textContent = "$9/mo";
+    recurringCosts[1].textContent = "$12/mo";
+    recurringCosts[2].textContent = "$15/mo";
   }
 });
 
