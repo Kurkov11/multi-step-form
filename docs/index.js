@@ -80,12 +80,18 @@ personalForm.addEventListener("submit", function (e) {
 //select your plan - start
 
 step2toggle.addEventListener("change", function () {
+  const toggleMonthlyYearly = function () {
+    document.getElementById("monthly").classList.toggle("text-dark-blue");
+    document.getElementById("yearly").classList.toggle("text-dark-blue");
+  };
   if (this.checked) {
     console.log("checked!");
     step2toggleDot.style.left = "23px"; //equivalent of 1.25 in tailwind variables
+    toggleMonthlyYearly();
   } else {
     console.log("not checked...");
     step2toggleDot.style.left = "5px"; //equivalent of 1.25 in tailwind variables
+    toggleMonthlyYearly();
   }
 });
 
