@@ -565,14 +565,6 @@ label {
   color: hsl(354 84% 57% / var(--tw-text-opacity));
 }
 
-.\!error {
-  display: none;
-  font-family: Ubuntu-Medium, sans-serif;
-  font-size: 0.813rem;
-  --tw-text-opacity: 1;
-  color: hsl(354 84% 57% / var(--tw-text-opacity));
-}
-
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -687,10 +679,6 @@ label {
 
 .flex {
   display: flex;
-}
-
-.hidden {
-  display: none;
 }
 
 .h-almostScreen {
