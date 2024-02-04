@@ -572,7 +572,7 @@ label {
   color: hsl(354 84% 57% / var(--tw-text-opacity));
 }
 
-.free-months {
+.free-month {
   display: none;
   font-family: Ubuntu-Regular, sans-serif;
   font-size: 0.813rem;
