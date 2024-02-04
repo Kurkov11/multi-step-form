@@ -84,8 +84,8 @@ submitButton.addEventListener("click", function (e) {
   }
 });
 backButton.addEventListener("click", function () {
-  cards[currentCardIndex].classList.remove("hidden");
-  cards[currentCardIndex + 1].classList.add("hidden");
+  cards[currentCardIndex - 1].classList.remove("hidden");
+  cards[currentCardIndex].classList.add("hidden");
   backButton.classList.add("hidden");
   buttonsParent.classList.add("justify-end");
   buttonsParent.classList.remove("justify-between");
