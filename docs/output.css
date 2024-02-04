@@ -572,6 +572,14 @@ label {
   color: hsl(354 84% 57% / var(--tw-text-opacity));
 }
 
+.free-months {
+  display: none;
+  font-family: Ubuntu-Regular, sans-serif;
+  font-size: 0.813rem;
+  --tw-text-opacity: 1;
+  color: hsl(213 96% 18% / var(--tw-text-opacity));
+}
+
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
