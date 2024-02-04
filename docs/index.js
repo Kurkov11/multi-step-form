@@ -8,6 +8,7 @@ const phoneEmpty = document.querySelector("#phone__empty");
 
 const submitButton = document.querySelector("#submit-button");
 const backButton = document.querySelector(".back-btn");
+const buttonsParent = document.querySelector(".buttons-parent");
 
 const personalForm = document.querySelector("#personal-info");
 
@@ -67,6 +68,8 @@ submitButton.addEventListener("click", function (e) {
     cards[currentCardIndex].classList.add("hidden");
     cards[currentCardIndex + 1].classList.remove("hidden");
     backButton.classList.remove("hidden");
+    buttonsParent.classList.remove("justify-end");
+    buttonsParent.classList.add("justify-between");
 
     sidebarCircles[currentCardIndex].style.backgroundColor = "transparent";
     sidebarCircles[currentCardIndex].style.borderColor = "white";
