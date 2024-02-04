@@ -498,8 +498,6 @@ h3 {
 }
 
 .card {
-  position: absolute;
-  top: 5.85rem;
   margin-left: 1rem;
   margin-right: 1rem;
   border-radius: 0.75rem;
@@ -793,10 +791,6 @@ label {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
-}
-
-.items-start {
-  align-items: flex-start;
 }
 
 .items-center {
