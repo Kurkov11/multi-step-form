@@ -63,8 +63,8 @@ submitButton.addEventListener("click", function (e) {
     phoneEmpty.style.display = "none";
     phoneIn.style.borderColor = "hsl(229 24% 87% / var(--tw-border-opacity))";
     phoneIn.style.outlineWidth = "1px";
-    cards[currentCardIndex].classList.toggle("hidden");
-    cards[currentCardIndex + 1].classList.toggle("hidden");
+    cards[currentCardIndex].classList.add("hidden");
+    cards[currentCardIndex + 1].classList.remove("hidden");
 
     sidebarCircles[currentCardIndex].style.backgroundColor = "transparent";
     sidebarCircles[currentCardIndex].style.borderColor = "white";
