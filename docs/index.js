@@ -7,6 +7,7 @@ const emailEmpty = document.querySelector("#email__empty");
 const phoneEmpty = document.querySelector("#phone__empty");
 
 const submitButton = document.querySelector("#submit-button");
+const backButton = document.querySelector(".back-btn");
 
 const personalForm = document.querySelector("#personal-info");
 
@@ -65,6 +66,7 @@ submitButton.addEventListener("click", function (e) {
     phoneIn.style.outlineWidth = "1px";
     cards[currentCardIndex].classList.add("hidden");
     cards[currentCardIndex + 1].classList.remove("hidden");
+    backButton.classList.remove("hidden");
 
     sidebarCircles[currentCardIndex].style.backgroundColor = "transparent";
     sidebarCircles[currentCardIndex].style.borderColor = "white";
