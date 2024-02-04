@@ -41,6 +41,9 @@ module.exports = {
       outlineWidth: {
         0.5: "0.1px",
       },
+      backgroundImage: {
+        "sidebar-mobile": "url('../assets/images/bg-sidebar-mobile.svg')",
+      },
     },
   },
   plugins: [],

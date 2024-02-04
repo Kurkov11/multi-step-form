@@ -58,12 +58,13 @@ submitButton.addEventListener("click", function (e) {
     phoneIn.style.borderColor = "red";
     phoneIn.style.outlineWidth = "0";
   } else {
+    //If entered data is correct
     e.preventDefault();
     phoneEmpty.style.display = "none";
     phoneIn.style.borderColor = "hsl(229 24% 87% / var(--tw-border-opacity))";
     phoneIn.style.outlineWidth = "1px";
-    cards[currentCardIndex].style.display = "hidden";
-    cards[currentCardIndex + 1].style.display = "block";
+    cards[currentCardIndex].classList.toggle("hidden");
+    cards[currentCardIndex + 1].classList.toggle("hidden");
 
     sidebarCircles[currentCardIndex].style.backgroundColor = "transparent";
     sidebarCircles[currentCardIndex].style.borderColor = "white";

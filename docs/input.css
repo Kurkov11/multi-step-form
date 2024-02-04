@@ -38,7 +38,7 @@
     @apply absolute top-1.5 left-3 text-500 text-white;
   }
   .card {
-    @apply mx-side-margin bg-white rounded-xl px-6 py-7;
+    @apply mx-side-margin bg-white rounded-xl px-6 py-7 relative;
   }
   .personal-input {
     @apply placeholder:text-600 placeholder:text-neutral-700 px-5 py-2 mb-2 block w-full focus:outline focus:outline-purple-blue;
