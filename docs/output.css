@@ -472,11 +472,9 @@ h3 {
 .sidebar {
   display: flex;
   justify-content: center;
-  background-image: url('../assets/images/bg-sidebar-mobile.svg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  padding-bottom: 4rem;
 }
 
 .sidebar__circle {

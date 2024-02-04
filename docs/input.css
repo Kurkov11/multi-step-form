@@ -29,7 +29,7 @@
     @apply font-ubuntuMedium text-dark-blue;
   }
   .sidebar {
-    @apply flex justify-center bg-[url('../assets/images/bg-sidebar-mobile.svg')] bg-cover bg-no-repeat bg-center pb-16;
+    @apply flex justify-center bg-cover bg-no-repeat bg-center;
   }
   .sidebar__circle {
     @apply rounded-full border-white border p-4 relative;
