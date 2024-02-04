@@ -56,6 +56,6 @@
     @apply text-red font-ubuntuMedium text-500 hidden;
   }
   .free-month {
-    @apply text-500 text-dark-blue font-ubuntuRegular hidden;
+    @apply text-500 text-dark-blue font-ubuntuRegular;
   }
 }

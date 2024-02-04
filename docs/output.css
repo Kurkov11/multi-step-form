@@ -573,7 +573,6 @@ label {
 }
 
 .free-month {
-  display: none;
   font-family: Ubuntu-Regular, sans-serif;
   font-size: 0.813rem;
   --tw-text-opacity: 1;

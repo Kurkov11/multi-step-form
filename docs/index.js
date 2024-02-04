@@ -23,9 +23,11 @@ const sidebarCirclesNumbers = Array.from(
   document.getElementsByClassName("sidebar__circle__number")
 );
 
+const freeMonths = document.querySelectorAll(".free-month");
+
 //personal info - start
 
-personalForm.addEventListener("submit", function (e) {
+submitButton.addEventListener("click", function (e) {
   const nameValue = nameIn.value;
   const emailValue = emailIn.value;
   const phoneValue = phoneIn.value;
@@ -83,6 +85,10 @@ step2toggle.addEventListener("change", function () {
   const toggleMonthlyYearly = function () {
     document.getElementById("monthly").classList.toggle("text-dark-blue");
     document.getElementById("yearly").classList.toggle("text-dark-blue");
+    //toggle free month visiblity
+    for (let j = 0; j < freeMonths.length; j++) {
+      freeMonths[j].classList.toggle("hidden");
+    }
   };
   const recurringCosts = document.querySelectorAll(".recurring-cost");
   if (this.checked) {
