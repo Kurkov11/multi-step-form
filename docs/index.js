@@ -119,7 +119,20 @@ backButton.addEventListener("click", function () {
 let billingPeriodMonthly = true;
 
 step2toggle.addEventListener("change", function () {
-  billingPeriodMonthly.toggle();
+  billingPeriodMonthly
+    ? (billingPeriodMonthly = false)
+    : (billingPeriodMonthly = true); //toggle
+
+  //Change text content of step 3 START
+  const addOnsCost = document.querySelectorAll(".add-on__cost");
+  for (let i = 0; i < addOnsCost.length; i++) {
+    if (!billingPeriodMonthly) {
+      addOnsCost[i].textContent = "yearly";
+    } else {
+      addOnsCost[i].textContent = "monthly";
+    }
+  }
+  //Change text content of step 3 END
 
   const toggleMonthlyYearly = function () {
     document.getElementById("monthly").classList.toggle("text-dark-blue");
