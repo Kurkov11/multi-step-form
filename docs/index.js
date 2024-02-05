@@ -9,6 +9,7 @@ const phoneEmpty = document.querySelector("#phone__empty");
 const submitButton = document.querySelector("#submit-button");
 const backButton = document.querySelector(".back-btn");
 const buttonsParent = document.querySelector(".buttons-parent");
+const confirmButton = document.querySelector("#confirm-button");
 
 const personalForm = document.querySelector("#personal-info");
 
@@ -43,7 +44,7 @@ profileCostEl.textContent = `+$${profileCost}/mo`;
 //buttons - start
 
 submitButton.addEventListener("click", function (e) {
-  let errorOcurred = true; //Assume there was an error
+  let errorOcurred = true; //Assuming there was an error
 
   // CARD 1 ---- START
   const nameValue = nameIn.value;
@@ -103,6 +104,12 @@ submitButton.addEventListener("click", function (e) {
       "hsl(213, 96%, 18%)";
     currentCardIndex++;
   }
+
+  if (currentCardIndex === 3) {
+    //Change next step to confirm
+    submitButton.classList.add("hidden");
+    confirmButton.classList.remove("hidden");
+  }
 });
 backButton.addEventListener("click", function () {
   cards[currentCardIndex - 1].classList.remove("hidden");
@@ -119,10 +126,17 @@ backButton.addEventListener("click", function () {
     "hsl(213, 96%, 18%)";
 
   currentCardIndex--;
+  //If this is the first card, hide the back button
   if (currentCardIndex === 0) {
     backButton.classList.add("hidden");
     buttonsParent.classList.add("justify-end");
     buttonsParent.classList.remove("justify-between");
+  }
+
+  //If we just returned from the last card, change confirm button to next step button
+  if (currentCardIndex === cards.length - 2) {
+    submitButton.classList.remove("hidden");
+    confirmButton.classList.add("hidden");
   }
 });
 

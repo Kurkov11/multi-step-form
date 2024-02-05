@@ -573,6 +573,19 @@ label {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.purple-button {
+  border-radius: 0.25rem;
+  --tw-bg-opacity: 1;
+  background-color: hsl(243 100% 62% / var(--tw-bg-opacity));
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-top: 0.625rem;
+  padding-bottom: 0.625rem;
+  font-size: 0.938rem;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
 .error {
   display: none;
   font-family: Ubuntu-Medium, sans-serif;
@@ -802,16 +815,12 @@ label {
   margin-right: 1rem;
 }
 
-.mt-6 {
-  margin-top: 1.5rem;
-}
-
-.mt-5 {
-  margin-top: 1.25rem;
-}
-
 .mt-2 {
   margin-top: 0.5rem;
+}
+
+.mt-6 {
+  margin-top: 1.5rem;
 }
 
 .block {
@@ -857,6 +866,18 @@ label {
 
 .h-restOfScreen {
   height: 11vh;
+}
+
+.h-36 {
+  height: 9rem;
+}
+
+.h-40 {
+  height: 10rem;
+}
+
+.h-44 {
+  height: 11rem;
 }
 
 .min-h-almostScreen {
@@ -1003,10 +1024,6 @@ label {
 
 .text-700 {
   font-size: 1.063;
-}
-
-.text-900 {
-  font-size: 1.5rem;
 }
 
 .text-dark-blue {

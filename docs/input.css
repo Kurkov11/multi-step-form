@@ -58,6 +58,9 @@
   .dark-blue-button {
     @apply bg-dark-blue text-600 text-white px-4 py-2.5 rounded;
   }
+  .purple-button {
+    @apply bg-purple-blue text-600 text-white px-6 py-2.5 rounded;
+  }
   .error {
     @apply text-red font-ubuntuMedium text-500 hidden;
   }
