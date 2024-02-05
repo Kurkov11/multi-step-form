@@ -34,9 +34,11 @@ module.exports = {
         28: "5.85rem",
       },
       height: {
-        almostScreen: "89vh",
         restOfScreen: "11vh",
         5.5: "1.375rem",
+      },
+      minHeight: {
+        almostScreen: "89vh",
       },
       outlineWidth: {
         0.5: "0.1px",

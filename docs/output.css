@@ -817,6 +817,10 @@ label {
   height: 11vh;
 }
 
+.min-h-almostScreen {
+  min-height: 89vh;
+}
+
 .w-10 {
   width: 2.5rem;
 }
