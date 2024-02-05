@@ -27,6 +27,19 @@ const sidebarCirclesNumbers = Array.from(
 
 const freeMonths = document.querySelectorAll(".free-month");
 
+//add on costs
+const onlineServiceCostEl = document.querySelector("#online-service-cost");
+const storageCostEl = document.querySelector("#storage-cost");
+const profileCostEl = document.querySelector("#profile-cost");
+const onlineServiceCost = 1;
+const storageCost = 2;
+const profileCost = 2;
+const yearlyMultiplier = 10;
+
+onlineServiceCostEl.textContent = `+$${onlineServiceCost}/mo`;
+storageCostEl.textContent = `+$${storageCost}/mo`;
+profileCostEl.textContent = `+$${profileCost}/mo`;
+
 //buttons - start
 
 submitButton.addEventListener("click", function (e) {
@@ -124,14 +137,18 @@ step2toggle.addEventListener("change", function () {
     : (billingPeriodMonthly = true); //toggle
 
   //Change text content of step 3 START
-  const addOnsCost = document.querySelectorAll(".add-on__cost");
-  for (let i = 0; i < addOnsCost.length; i++) {
-    if (!billingPeriodMonthly) {
-      addOnsCost[i].textContent = "yearly";
-    } else {
-      addOnsCost[i].textContent = "monthly";
-    }
+  if (billingPeriodMonthly) {
+    onlineServiceCostEl.textContent = `+$${onlineServiceCost}/mo`;
+    storageCostEl.textContent = `+$${storageCost}/mo`;
+    profileCostEl.textContent = `+$${profileCost}/mo`;
+  } else {
+    onlineServiceCostEl.textContent = `+$${
+      onlineServiceCost * yearlyMultiplier
+    }/yr`;
+    storageCostEl.textContent = `+$${storageCost * yearlyMultiplier}/yr`;
+    profileCostEl.textContent = `+$${profileCost * yearlyMultiplier}/yr`;
   }
+
   //Change text content of step 3 END
 
   const toggleMonthlyYearly = function () {
