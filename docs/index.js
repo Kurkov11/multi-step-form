@@ -157,4 +157,14 @@ planTypes.forEach((planType) => {
   };
 });
 
+const checkBoxes = document.querySelectorAll(".checkbox");
+const addOns = document.querySelectorAll(".add-on");
+for (let i = 0; i < addOns.length; i++) {
+  addOns[i].addEventListener("click", function () {
+    addOns[i].classList.toggle("add-on-checked");
+
+    const checkboxToCheck = addOns[i].querySelector(".checkbox");
+    checkboxToCheck.classList.toggle("checkbox-checked");
+  });
+}
 //select your plan - end

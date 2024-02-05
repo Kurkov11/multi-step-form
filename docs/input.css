@@ -58,4 +58,16 @@
   .free-month {
     @apply text-500 text-dark-blue font-ubuntuRegular;
   }
+  .checkbox {
+    @apply w-5 h-5 rounded gray-border bg-no-repeat bg-[length:13px_11px] bg-center;
+  }
+  .checkbox-checked {
+    @apply bg-purple-blue bg-[url('../assets/images/icon-checkmark.svg')] border-none;
+  }
+  .add-on {
+    @apply gray-border p-3 flex items-center;
+  }
+  .add-on-checked {
+    @apply bg-neutral-300 bg-opacity-40 border-purple-blue;
+  }
 }

@@ -576,6 +576,42 @@ label {
   color: hsl(213 96% 18% / var(--tw-text-opacity));
 }
 
+.checkbox {
+  border-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: hsl(229 24% 87% / var(--tw-border-opacity));
+  height: 1.25rem;
+  width: 1.25rem;
+  border-radius: 0.25rem;
+  background-size: 13px 11px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.checkbox-checked {
+  border-style: none;
+  --tw-bg-opacity: 1;
+  background-color: hsl(243 100% 62% / var(--tw-bg-opacity));
+  background-image: url('../assets/images/icon-checkmark.svg');
+}
+
+.add-on {
+  border-radius: 0.375rem;
+  border-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: hsl(229 24% 87% / var(--tw-border-opacity));
+  display: flex;
+  align-items: center;
+  padding: 0.75rem;
+}
+
+.add-on-checked {
+  --tw-border-opacity: 1;
+  border-color: hsl(243 100% 62% / var(--tw-border-opacity));
+  background-color: hsl(217 100% 97% / var(--tw-bg-opacity));
+  --tw-bg-opacity: 0.4;
+}
+
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -708,6 +744,10 @@ label {
   z-index: 50;
 }
 
+.ml-3 {
+  margin-left: 0.75rem;
+}
+
 .ml-side-margin {
   margin-left: 1rem;
 }
@@ -718,6 +758,10 @@ label {
 
 .mr-3\.5 {
   margin-right: 0.875rem;
+}
+
+.mr-auto {
+  margin-right: auto;
 }
 
 .mr-side-margin {
@@ -824,6 +868,10 @@ label {
   gap: 1.5rem;
 }
 
+.gap-5 {
+  gap: 1.25rem;
+}
+
 .rounded-full {
   border-radius: 9999px;
 }
@@ -895,6 +943,10 @@ label {
   font-family: Ubuntu-Medium, sans-serif;
 }
 
+.text-500 {
+  font-size: 0.813rem;
+}
+
 .text-600 {
   font-size: 0.938rem;
 }
@@ -902,6 +954,11 @@ label {
 .text-dark-blue {
   --tw-text-opacity: 1;
   color: hsl(213 96% 18% / var(--tw-text-opacity));
+}
+
+.text-purple-blue {
+  --tw-text-opacity: 1;
+  color: hsl(243 100% 62% / var(--tw-text-opacity));
 }
 
 .transition-all {
