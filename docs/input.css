@@ -28,6 +28,9 @@
   h3 {
     @apply font-ubuntuMedium text-dark-blue;
   }
+  a {
+    @apply underline decoration-2;
+  }
   .sidebar {
     @apply flex justify-center bg-cover bg-no-repeat bg-center;
   }
@@ -45,6 +48,9 @@
   }
   .gray-border {
     @apply border rounded-md border-neutral-400;
+  }
+  .gray-border-bottom {
+    @apply border-b rounded-md border-neutral-400;
   }
   label {
     @apply text-dark-blue text-500;
@@ -69,5 +75,8 @@
   }
   .add-on-checked {
     @apply bg-neutral-300 bg-opacity-40 border-purple-blue;
+  }
+  .summary {
+    @apply bg-neutral-200 rounded p-4 text-600;
   }
 }

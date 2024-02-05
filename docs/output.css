@@ -469,6 +469,11 @@ h3 {
   color: hsl(213 96% 18% / var(--tw-text-opacity));
 }
 
+a {
+  text-decoration-line: underline;
+  text-decoration-thickness: 2px;
+}
+
 .sidebar {
   display: flex;
   justify-content: center;
@@ -542,6 +547,13 @@ h3 {
   border-color: hsl(229 24% 87% / var(--tw-border-opacity));
 }
 
+.gray-border-bottom {
+  border-radius: 0.375rem;
+  border-bottom-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: hsl(229 24% 87% / var(--tw-border-opacity));
+}
+
 label {
   font-size: 0.813rem;
   --tw-text-opacity: 1;
@@ -610,6 +622,14 @@ label {
   border-color: hsl(243 100% 62% / var(--tw-border-opacity));
   background-color: hsl(217 100% 97% / var(--tw-bg-opacity));
   --tw-bg-opacity: 0.4;
+}
+
+.summary {
+  border-radius: 0.25rem;
+  --tw-bg-opacity: 1;
+  background-color: hsl(231 100% 99% / var(--tw-bg-opacity));
+  padding: 1rem;
+  font-size: 0.938rem;
 }
 
 *, ::before, ::after {
@@ -744,6 +764,20 @@ label {
   z-index: 50;
 }
 
+.mx-4 {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.my-6 {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.mb-3 {
+  margin-bottom: 0.75rem;
+}
+
 .ml-3 {
   margin-left: 0.75rem;
 }
@@ -770,6 +804,14 @@ label {
 
 .mt-6 {
   margin-top: 1.5rem;
+}
+
+.mt-5 {
+  margin-top: 1.25rem;
+}
+
+.mt-2 {
+  margin-top: 0.5rem;
 }
 
 .block {
@@ -935,8 +977,16 @@ label {
   padding-bottom: 2rem;
 }
 
+.pb-3 {
+  padding-bottom: 0.75rem;
+}
+
 .pb-6 {
   padding-bottom: 1.5rem;
+}
+
+.font-ubuntuBold {
+  font-family: Ubuntu-Bold, sans-serif;
 }
 
 .font-ubuntuMedium {
@@ -949,6 +999,14 @@ label {
 
 .text-600 {
   font-size: 0.938rem;
+}
+
+.text-700 {
+  font-size: 1.063;
+}
+
+.text-900 {
+  font-size: 1.5rem;
 }
 
 .text-dark-blue {
