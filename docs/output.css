@@ -868,10 +868,6 @@ label {
   gap: 1.5rem;
 }
 
-.gap-5 {
-  gap: 1.25rem;
-}
-
 .rounded-full {
   border-radius: 9999px;
 }
