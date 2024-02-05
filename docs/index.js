@@ -94,9 +94,6 @@ submitButton.addEventListener("click", function (e) {
 backButton.addEventListener("click", function () {
   cards[currentCardIndex - 1].classList.remove("hidden");
   cards[currentCardIndex].classList.add("hidden");
-  backButton.classList.add("hidden");
-  buttonsParent.classList.add("justify-end");
-  buttonsParent.classList.remove("justify-between");
 
   sidebarCircles[currentCardIndex].style.backgroundColor = "transparent";
   sidebarCircles[currentCardIndex].style.borderColor = "white";
@@ -107,7 +104,13 @@ backButton.addEventListener("click", function () {
   sidebarCircles[currentCardIndex - 1].style.borderColor = "hsl(206 94% 87%)";
   sidebarCirclesNumbers[currentCardIndex - 1].style.color =
     "hsl(213, 96%, 18%)";
+
   currentCardIndex--;
+  if (currentCardIndex === 0) {
+    backButton.classList.add("hidden");
+    buttonsParent.classList.add("justify-end");
+    buttonsParent.classList.remove("justify-between");
+  }
 });
 
 //buttons - end
