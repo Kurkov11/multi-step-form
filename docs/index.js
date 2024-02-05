@@ -27,9 +27,12 @@ const sidebarCirclesNumbers = Array.from(
 
 const freeMonths = document.querySelectorAll(".free-month");
 
-//personal info - start
+//buttons - start
 
 submitButton.addEventListener("click", function (e) {
+  let errorOcurred = true; //Assume there was an error
+
+  // CARD 1 ---- START
   const nameValue = nameIn.value;
   const emailValue = emailIn.value;
   const phoneValue = phoneIn.value;
@@ -61,10 +64,15 @@ submitButton.addEventListener("click", function (e) {
     phoneIn.style.outlineWidth = "0";
   } else {
     //If entered data is correct
+    errorOcurred = false;
     e.preventDefault();
     phoneEmpty.style.display = "none";
     phoneIn.style.borderColor = "hsl(229 24% 87% / var(--tw-border-opacity))";
     phoneIn.style.outlineWidth = "1px";
+    // CARD 1 ---- END
+  }
+
+  if (!errorOcurred && currentCardIndex + 1 < cards.length) {
     cards[currentCardIndex].classList.add("hidden");
     cards[currentCardIndex + 1].classList.remove("hidden");
     backButton.classList.remove("hidden");
@@ -102,7 +110,7 @@ backButton.addEventListener("click", function () {
   currentCardIndex--;
 });
 
-//personal info - end
+//buttons - end
 
 //select your plan - start
 
