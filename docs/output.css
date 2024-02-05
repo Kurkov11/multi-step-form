@@ -511,6 +511,9 @@ a {
   padding-right: 1.5rem;
   padding-top: 1.75rem;
   padding-bottom: 1.75rem;
+  --tw-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;;
+  --tw-shadow-colored: 0px 4px 12px; var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
 .personal-input {
@@ -782,11 +785,6 @@ label {
   margin-right: 1rem;
 }
 
-.my-6 {
-  margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
-}
-
 .mb-3 {
   margin-bottom: 0.75rem;
 }
@@ -847,8 +845,8 @@ label {
   height: 0.75rem;
 }
 
-.h-32 {
-  height: 8rem;
+.h-44 {
+  height: 11rem;
 }
 
 .h-5 {
@@ -866,18 +864,6 @@ label {
 
 .h-restOfScreen {
   height: 11vh;
-}
-
-.h-36 {
-  height: 9rem;
-}
-
-.h-40 {
-  height: 10rem;
-}
-
-.h-44 {
-  height: 11rem;
 }
 
 .min-h-almostScreen {
@@ -1034,12 +1020,6 @@ label {
 .text-purple-blue {
   --tw-text-opacity: 1;
   color: hsl(243 100% 62% / var(--tw-text-opacity));
-}
-
-.shadow {
-  --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
-  --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
 .transition-all {
