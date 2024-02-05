@@ -116,8 +116,11 @@ backButton.addEventListener("click", function () {
 //buttons - end
 
 //select your plan - start
+let billingPeriodMonthly = true;
 
 step2toggle.addEventListener("change", function () {
+  billingPeriodMonthly.toggle();
+
   const toggleMonthlyYearly = function () {
     document.getElementById("monthly").classList.toggle("text-dark-blue");
     document.getElementById("yearly").classList.toggle("text-dark-blue");
