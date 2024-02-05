@@ -19,6 +19,8 @@ const step2toggleDot = document.querySelector("#step2-toggle-dot");
 const cards = Array.from(document.getElementsByClassName("card"));
 let currentCardIndex = 0;
 
+let selectedPlanIndex = 0; //initially selected
+const planParenthesisSummary = document.querySelector("#plan-parenthesis");
 const sidebarCircles = Array.from(
   document.getElementsByClassName("sidebar__circle")
 );
@@ -41,6 +43,9 @@ onlineServiceCostEl.textContent = `+$${onlineServiceCost}/mo`;
 storageCostEl.textContent = `+$${storageCost}/mo`;
 profileCostEl.textContent = `+$${profileCost}/mo`;
 
+onlineServiceSummaryEl = document.querySelector("#online-service-summary");
+storageSummaryEl = document.querySelector("#storage-summary");
+profileSummaryEl = document.querySelector("#profile-summary");
 //buttons - start
 
 submitButton.addEventListener("click", function (e) {
@@ -149,18 +154,31 @@ step2toggle.addEventListener("change", function () {
   billingPeriodMonthly
     ? (billingPeriodMonthly = false)
     : (billingPeriodMonthly = true); //toggle
-
+  console.log(billingPeriodMonthly);
   //Change text content of step 3 START
   if (billingPeriodMonthly) {
     onlineServiceCostEl.textContent = `+$${onlineServiceCost}/mo`;
     storageCostEl.textContent = `+$${storageCost}/mo`;
     profileCostEl.textContent = `+$${profileCost}/mo`;
+
+    onlineServiceSummaryEl.textContent = `+$${onlineServiceCost}/mo`;
+    storageSummaryEl.textContent = `+$${storageCost}/mo`;
+    profileSummaryEl.textContent = `+$${profileCost}/mo`;
+
+    planParenthesisSummary.textContent = "(Monthly)";
   } else {
     onlineServiceCostEl.textContent = `+$${
       onlineServiceCost * yearlyMultiplier
     }/yr`;
     storageCostEl.textContent = `+$${storageCost * yearlyMultiplier}/yr`;
     profileCostEl.textContent = `+$${profileCost * yearlyMultiplier}/yr`;
+    onlineServiceSummaryEl.textContent = `+$${
+      onlineServiceCost * yearlyMultiplier
+    }/yr`;
+    storageSummaryEl.textContent = `+$${storageCost * yearlyMultiplier}/yr`;
+    profileSummaryEl.textContent = `+$${profileCost * yearlyMultiplier}/yr`;
+
+    planParenthesisSummary.textContent = "(Yearly)";
   }
 
   //Change text content of step 3 END
@@ -192,7 +210,7 @@ step2toggle.addEventListener("change", function () {
 });
 
 const planTypes = Array.from(document.querySelectorAll(".plan-type"));
-console.log(planTypes);
+const planSummary = document.querySelector("#plan-summary");
 planTypes.forEach((planType) => {
   planType.onclick = function () {
     planType.style.borderColor = "hsl(243, 100%, 62%)"; //hard coded purple blue from taiwlind config. Should be dry code...
@@ -203,7 +221,20 @@ planTypes.forEach((planType) => {
         planTypes[i].style.backgroundColor = "white";
       }
     }
-    console.log(planType);
+    //summary page
+    selectedPlanIndex = planTypes.indexOf(planType);
+    console.log(billingPeriodMonthly);
+    switch (selectedPlanIndex) {
+      case 0:
+        planSummary.textContent = "Arcade";
+        break;
+      case 1:
+        planSummary.textContent = "Advanced";
+        break;
+      case 2:
+        planSummary.textContent = "Pro";
+        break;
+    }
   };
 });
 
