@@ -30,6 +30,11 @@ const sidebarCirclesNumbers = Array.from(
 
 const freeMonths = document.querySelectorAll(".free-month");
 
+//plan costs
+const arcadeCost = 9;
+const advancedCost = 12;
+const proCost = 15;
+
 //add on costs
 const onlineServiceCostEl = document.querySelector("#online-service-cost");
 const storageCostEl = document.querySelector("#storage-cost");
@@ -155,7 +160,7 @@ step2toggle.addEventListener("change", function () {
     ? (billingPeriodMonthly = false)
     : (billingPeriodMonthly = true); //toggle
   console.log(billingPeriodMonthly);
-  //Change text content of step 3 START
+  //Change text content of step 3 and 4 START
   if (billingPeriodMonthly) {
     onlineServiceCostEl.textContent = `+$${onlineServiceCost}/mo`;
     storageCostEl.textContent = `+$${storageCost}/mo`;
@@ -181,7 +186,7 @@ step2toggle.addEventListener("change", function () {
     planParenthesisSummary.textContent = "(Yearly)";
   }
 
-  //Change text content of step 3 END
+  //Change text content of step 3 and 4 END
 
   const toggleMonthlyYearly = function () {
     document.getElementById("monthly").classList.toggle("text-dark-blue");
