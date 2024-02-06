@@ -168,6 +168,23 @@ backButton.addEventListener("click", function () {
     confirmButton.classList.add("hidden");
   }
 });
+const changeButton = document.querySelector(".change-btn");
+changeButton.addEventListener("click", function () {
+  submitButton.classList.remove("hidden");
+  confirmButton.classList.add("hidden");
+  cards[1].classList.remove("hidden");
+  cards[currentCardIndex].classList.add("hidden");
+
+  sidebarCircles[currentCardIndex].style.backgroundColor = "transparent";
+  sidebarCircles[currentCardIndex].style.borderColor = "white";
+  sidebarCirclesNumbers[currentCardIndex].style.color = "white";
+
+  sidebarCircles[1].style.backgroundColor = "hsl(206 94% 87%)";
+  sidebarCircles[1].style.borderColor = "hsl(206 94% 87%)";
+  sidebarCirclesNumbers[1].style.color = "hsl(213, 96%, 18%)";
+
+  currentCardIndex = 1;
+});
 
 //buttons - end
 
