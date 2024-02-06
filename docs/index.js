@@ -1,3 +1,5 @@
+const summaryBorder = document.querySelector(".summary-border");
+
 const nameIn = document.querySelector("#name");
 const emailIn = document.querySelector("#email");
 const phoneIn = document.querySelector("#phone");
@@ -316,6 +318,7 @@ const checkBoxes = document.querySelectorAll(".checkbox");
 const addOns = document.querySelectorAll(".add-on");
 const addOnSummaries = document.querySelectorAll(".add-on-summary");
 console.log(addOnSummaries);
+
 for (let i = 0; i < addOns.length; i++) {
   addOns[i].addEventListener("click", function () {
     addOns[i].classList.toggle("add-on-checked");
@@ -344,6 +347,24 @@ for (let i = 0; i < addOns.length; i++) {
     calculateTotal();
     console.log("base:" + baseCost);
     console.log("real:" + baseCost * yearlyMultiplier);
+
+    //Remove the gray separator/border when there are no addons selected
+    let anyAddOnChecked = false;
+    for (let i = 0; i < addOns.length; i++) {
+      if (addOns[i].classList.contains("add-on-checked")) {
+        anyAddOnChecked = true;
+      }
+      if (!anyAddOnChecked) {
+        summaryBorder.classList.remove("gray-border-bottom");
+        summaryBorder.classList.remove("pb-3");
+        summaryBorder.classList.remove("mb-3");
+      } else {
+        summaryBorder.classList.add("gray-border-bottom");
+        summaryBorder.classList.add("pb-3");
+        summaryBorder.classList.add("mb-3");
+      }
+    }
   });
 }
+
 //select your plan - end
