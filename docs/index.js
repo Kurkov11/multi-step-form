@@ -34,6 +34,9 @@ const freeMonths = document.querySelectorAll(".free-month");
 const arcadeCost = 9;
 const advancedCost = 12;
 const proCost = 15;
+const planCostEl = document.querySelector("#plan-cost");
+const planBillingEl = document.querySelector(".plan-billing");
+let summarisedPlanCost = arcadeCost; //arcadeCost is selected by default
 
 //add on costs
 const onlineServiceCostEl = document.querySelector("#online-service-cost");
@@ -155,6 +158,8 @@ backButton.addEventListener("click", function () {
 //select your plan - start
 let billingPeriodMonthly = true;
 
+const recurringCosts = document.querySelectorAll(".recurring-cost");
+
 step2toggle.addEventListener("change", function () {
   billingPeriodMonthly
     ? (billingPeriodMonthly = false)
@@ -196,22 +201,23 @@ step2toggle.addEventListener("change", function () {
       freeMonths[j].classList.toggle("hidden");
     }
   };
-  const recurringCosts = document.querySelectorAll(".recurring-cost");
+
   if (this.checked) {
     console.log("checked!");
     step2toggleDot.style.left = "23px"; //equivalent of 1.25 in tailwind variables
     toggleMonthlyYearly();
-    recurringCosts[0].textContent = "$90/yr";
-    recurringCosts[1].textContent = "$120/yr";
-    recurringCosts[2].textContent = "$150/yr";
+    recurringCosts[0].textContent = `$${arcadeCost * yearlyMultiplier}/yr`;
+    recurringCosts[1].textContent = `$${advancedCost * yearlyMultiplier}/yr`;
+    recurringCosts[2].textContent = `$${proCost * yearlyMultiplier}/yr`;
   } else {
     console.log("not checked...");
     step2toggleDot.style.left = "5px"; //equivalent of 1.25 in tailwind variables
     toggleMonthlyYearly();
-    recurringCosts[0].textContent = "$9/mo";
-    recurringCosts[1].textContent = "$12/mo";
-    recurringCosts[2].textContent = "$15/mo";
+    recurringCosts[0].textContent = `$${arcadeCost}/mo`;
+    recurringCosts[1].textContent = `$${advancedCost}/mo`;
+    recurringCosts[2].textContent = `$${proCost}/mo`;
   }
+  planCostEl.textContent = recurringCosts[selectedPlanIndex].textContent;
 });
 
 const planTypes = Array.from(document.querySelectorAll(".plan-type"));
@@ -231,13 +237,21 @@ planTypes.forEach((planType) => {
     console.log(billingPeriodMonthly);
     switch (selectedPlanIndex) {
       case 0:
+        console.log(recurringCosts[0].textContent);
+
         planSummary.textContent = "Arcade";
+        planCostEl.textContent = recurringCosts[0].textContent;
         break;
       case 1:
+        console.log(recurringCosts[1].textContent);
+
         planSummary.textContent = "Advanced";
+        planCostEl.textContent = recurringCosts[1].textContent;
         break;
       case 2:
+        console.log(recurringCosts[2].textContent);
         planSummary.textContent = "Pro";
+        planCostEl.textContent = recurringCosts[2].textContent;
         break;
     }
   };
