@@ -469,7 +469,8 @@ h3 {
   color: hsl(213 96% 18% / var(--tw-text-opacity));
 }
 
-a {
+a,
+  .change-btn {
   text-decoration-line: underline;
   text-decoration-thickness: 2px;
 }
