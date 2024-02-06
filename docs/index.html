@@ -185,7 +185,7 @@
           <h1>Pick add-ons</h1>
           <h2>Add-ons help enhance your gaming experience.</h2>
           <div class="grid gap-3">
-            <div class="add-on">
+            <div class="add-on online-service">
               <div class="checkbox"></div>
               <div class="ml-3 mr-auto">
                 <h3>Online service</h3>
@@ -198,7 +198,7 @@
                 +$1/mo
               </p>
             </div>
-            <div class="add-on">
+            <div class="add-on larger-storage">
               <div class="checkbox"></div>
               <div class="ml-3 mr-auto">
                 <h3>Larger Storage</h3>
@@ -211,7 +211,7 @@
                 +$2/mo
               </p>
             </div>
-            <div class="add-on">
+            <div class="add-on customizable-profile">
               <div class="checkbox"></div>
               <div class="ml-3 mr-auto">
                 <h3>Customizable profile</h3>
@@ -256,15 +256,20 @@
               </p>
             </div>
             <div class="grid gap-3">
-              <div class="flex justify-between">
+              <!--hidden will be toggled-->
+              <div class="flex justify-between add-on-summary hidden">
                 <p>Online service</p>
                 <p class="text-dark-blue" id="online-service-summary">+$1/mo</p>
               </div>
-              <div class="flex justify-between">
+
+              <!--hidden will be toggled-->
+              <div class="flex justify-between add-on-summary hidden">
                 <p>Larger Storage</p>
                 <p class="text-dark-blue" id="storage-summary">+$2/mo</p>
               </div>
-              <div class="flex justify-between">
+
+              <!--hidden will be toggled-->
+              <div class="flex justify-between add-on-summary hidden">
                 <p>Customizable Profile</p>
                 <p class="text-dark-blue" id="profile-summary">+$2/mo</p>
               </div>

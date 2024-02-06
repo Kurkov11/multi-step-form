@@ -259,9 +259,12 @@ planTypes.forEach((planType) => {
 
 const checkBoxes = document.querySelectorAll(".checkbox");
 const addOns = document.querySelectorAll(".add-on");
+const addOnSummaries = document.querySelectorAll(".add-on-summary");
+console.log(addOnSummaries);
 for (let i = 0; i < addOns.length; i++) {
   addOns[i].addEventListener("click", function () {
     addOns[i].classList.toggle("add-on-checked");
+    addOnSummaries[i].classList.toggle("hidden");
 
     const checkboxToCheck = addOns[i].querySelector(".checkbox");
     checkboxToCheck.classList.toggle("checkbox-checked");
