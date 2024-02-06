@@ -7,6 +7,7 @@ const phoneIn = document.querySelector("#phone");
 const nameEmpty = document.querySelector("#name__empty");
 const emailEmpty = document.querySelector("#email__empty");
 const phoneEmpty = document.querySelector("#phone__empty");
+const emailWrong = document.querySelector("#email__wrong");
 
 const submitButton = document.querySelector("#submit-button");
 const backButton = document.querySelector(".back-btn");
@@ -105,9 +106,11 @@ submitButton.addEventListener("click", function (e) {
     emailEmpty.style.display = "none";
     emailIn.style.borderColor = "red";
     emailIn.style.outlineWidth = "0";
+    emailWrong.style.display = "inline";
     errorOcurred = true;
   } else {
     emailEmpty.style.display = "none";
+    emailWrong.style.display = "none";
     emailIn.style.borderColor = "hsl(229 24% 87% / var(--tw-border-opacity))";
     emailIn.style.outlineWidth = "1px";
   }
