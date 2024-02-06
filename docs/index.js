@@ -76,7 +76,7 @@ profileSummaryEl = document.querySelector("#profile-summary");
 //buttons - start
 
 submitButton.addEventListener("click", function (e) {
-  let errorOcurred = true; //Assuming there was an error
+  let errorOcurred = false;
 
   // CARD 1 ---- START
   const nameValue = nameIn.value;
@@ -88,6 +88,7 @@ submitButton.addEventListener("click", function (e) {
     nameEmpty.style.display = "inline"; //default
     nameIn.style.borderColor = "red";
     nameIn.style.outlineWidth = "0";
+    errorOcurred = true;
   } else {
     nameEmpty.style.display = "none";
     nameIn.style.borderColor = "hsl(229 24% 87% / var(--tw-border-opacity))";
@@ -98,6 +99,13 @@ submitButton.addEventListener("click", function (e) {
     emailEmpty.style.display = "inline"; //default
     emailIn.style.borderColor = "red";
     emailIn.style.outlineWidth = "0";
+    errorOcurred = true;
+  } else if (!emailValue.match(/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/g)) {
+    e.preventDefault();
+    emailEmpty.style.display = "none";
+    emailIn.style.borderColor = "red";
+    emailIn.style.outlineWidth = "0";
+    errorOcurred = true;
   } else {
     emailEmpty.style.display = "none";
     emailIn.style.borderColor = "hsl(229 24% 87% / var(--tw-border-opacity))";
@@ -108,9 +116,8 @@ submitButton.addEventListener("click", function (e) {
     phoneEmpty.style.display = "inline"; //default
     phoneIn.style.borderColor = "red";
     phoneIn.style.outlineWidth = "0";
+    errorOcurred = true;
   } else {
-    //If entered data is correct
-    errorOcurred = false;
     e.preventDefault();
     phoneEmpty.style.display = "none";
     phoneIn.style.borderColor = "hsl(229 24% 87% / var(--tw-border-opacity))";
