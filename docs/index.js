@@ -21,6 +21,8 @@ let currentCardIndex = 0;
 
 let selectedPlanIndex = 0; //initially selected
 const planParenthesisSummary = document.querySelector("#plan-parenthesis");
+const totalParenthesisSummary = document.querySelector("#plan-per-parenthesis");
+
 const sidebarCircles = Array.from(
   document.getElementsByClassName("sidebar__circle")
 );
@@ -46,6 +48,19 @@ const onlineServiceCost = 1;
 const storageCost = 2;
 const profileCost = 2;
 const yearlyMultiplier = 10;
+
+//initial total costs
+let totalMultiplier = 1;
+let totalCost;
+const totalCostEl = document.getElementById("total-cost");
+let basePlanCost = arcadeCost;
+let baseCost = 0;
+function calculateTotal() {
+  totalCost = totalMultiplier * (baseCost + basePlanCost);
+  totalCostEl.textContent = `+$${totalCost}/${
+    totalMultiplier === 1 ? "mo" : "yr"
+  }`;
+}
 
 onlineServiceCostEl.textContent = `+$${onlineServiceCost}/mo`;
 storageCostEl.textContent = `+$${storageCost}/mo`;
@@ -122,6 +137,7 @@ submitButton.addEventListener("click", function (e) {
     //Change next step to confirm
     submitButton.classList.add("hidden");
     confirmButton.classList.remove("hidden");
+    calculateTotal();
   }
 });
 backButton.addEventListener("click", function () {
@@ -165,7 +181,7 @@ step2toggle.addEventListener("change", function () {
     ? (billingPeriodMonthly = false)
     : (billingPeriodMonthly = true); //toggle
   console.log(billingPeriodMonthly);
-  //Change text content of step 3 and 4 START
+  //Change text content of step 3, 4, 5 START
   if (billingPeriodMonthly) {
     onlineServiceCostEl.textContent = `+$${onlineServiceCost}/mo`;
     storageCostEl.textContent = `+$${storageCost}/mo`;
@@ -176,6 +192,9 @@ step2toggle.addEventListener("change", function () {
     profileSummaryEl.textContent = `+$${profileCost}/mo`;
 
     planParenthesisSummary.textContent = "(Monthly)";
+    totalParenthesisSummary.textContent = "(per month)";
+
+    totalMultiplier = 1;
   } else {
     onlineServiceCostEl.textContent = `+$${
       onlineServiceCost * yearlyMultiplier
@@ -189,6 +208,9 @@ step2toggle.addEventListener("change", function () {
     profileSummaryEl.textContent = `+$${profileCost * yearlyMultiplier}/yr`;
 
     planParenthesisSummary.textContent = "(Yearly)";
+    totalParenthesisSummary.textContent = "(per year)";
+
+    totalMultiplier = yearlyMultiplier;
   }
 
   //Change text content of step 3 and 4 END
@@ -236,24 +258,31 @@ planTypes.forEach((planType) => {
     selectedPlanIndex = planTypes.indexOf(planType);
     console.log(billingPeriodMonthly);
     switch (selectedPlanIndex) {
+      //Arcade
       case 0:
         console.log(recurringCosts[0].textContent);
 
         planSummary.textContent = "Arcade";
         planCostEl.textContent = recurringCosts[0].textContent;
+        basePlanCost = arcadeCost;
         break;
+      //Advanced
       case 1:
         console.log(recurringCosts[1].textContent);
 
         planSummary.textContent = "Advanced";
         planCostEl.textContent = recurringCosts[1].textContent;
+        basePlanCost = advancedCost;
         break;
+      //Pro
       case 2:
         console.log(recurringCosts[2].textContent);
         planSummary.textContent = "Pro";
         planCostEl.textContent = recurringCosts[2].textContent;
+        basePlanCost = proCost;
         break;
     }
+    calculateTotal(); //for step 4
   };
 });
 
@@ -268,6 +297,27 @@ for (let i = 0; i < addOns.length; i++) {
 
     const checkboxToCheck = addOns[i].querySelector(".checkbox");
     checkboxToCheck.classList.toggle("checkbox-checked");
+
+    if (addOns[i].classList.contains("add-on-checked")) {
+      if (i === 0) {
+        baseCost += 1;
+      } else if (i === 1) {
+        baseCost += 2;
+      } else {
+        baseCost += 2;
+      }
+    } else {
+      if (i === 0) {
+        baseCost -= 1;
+      } else if (i === 1) {
+        baseCost -= 2;
+      } else {
+        baseCost -= 2;
+      }
+    }
+    calculateTotal();
+    console.log("base:" + baseCost);
+    console.log("real:" + baseCost * yearlyMultiplier);
   });
 }
 //select your plan - end
