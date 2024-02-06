@@ -32,6 +32,8 @@ const sidebarCirclesNumbers = Array.from(
 
 const freeMonths = document.querySelectorAll(".free-month");
 
+const bgDiv = document.querySelector(".bg-div");
+
 //plan costs
 const arcadeCost = 9;
 const advancedCost = 12;
@@ -185,7 +187,14 @@ changeButton.addEventListener("click", function () {
 
   currentCardIndex = 1;
 });
-
+confirmButton.addEventListener("click", function () {
+  bgDiv.classList.add("h-screen");
+  bgDiv.classList.remove("pb-6");
+  document.querySelector(".thank-you").classList.remove("hidden");
+  cards[currentCardIndex].classList.add("hidden");
+  buttonsParent.classList.add("hidden");
+  currentCardIndex = 4;
+});
 //buttons - end
 
 //select your plan - start
