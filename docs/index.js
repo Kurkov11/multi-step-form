@@ -165,7 +165,7 @@ backButton.addEventListener("click", function () {
   }
 
   //If we just returned from the last card, change confirm button to next step button
-  if (currentCardIndex === cards.length - 2) {
+  if (currentCardIndex === cards.length - 3) {
     submitButton.classList.remove("hidden");
     confirmButton.classList.add("hidden");
   }
