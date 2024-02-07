@@ -99,6 +99,7 @@ submitButton.addEventListener("click", function (e) {
     emailEmpty.style.display = "inline"; //default
     emailIn.style.borderColor = "red";
     emailIn.style.outlineWidth = "0";
+    emailWrong.style.display = "none";
     errorOcurred = true;
   } else if (!emailValue.match(/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/g)) {
     e.preventDefault();
