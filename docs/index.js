@@ -75,7 +75,6 @@ onlineServiceSummaryEl = document.querySelector("#online-service-summary");
 storageSummaryEl = document.querySelector("#storage-summary");
 profileSummaryEl = document.querySelector("#profile-summary");
 //buttons - start
-
 submitButton.addEventListener("click", function (e) {
   let errorOcurred = false;
 

@@ -525,6 +525,10 @@ a,
   padding-right: 1.25rem;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
+  outline-width: 1px;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
 }
 
 .personal-input::-moz-placeholder {
@@ -621,7 +625,7 @@ label {
   border-style: none;
   --tw-bg-opacity: 1;
   background-color: hsl(243 100% 62% / var(--tw-bg-opacity));
-  background-image: url('../assets/images/icon-checkmark.svg');
+  background-image: url('assets/images/icon-checkmark.svg');
 }
 
 .add-on {
@@ -632,6 +636,9 @@ label {
   display: flex;
   align-items: center;
   padding: 0.75rem;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
 }
 
 .add-on-checked {
@@ -647,6 +654,12 @@ label {
   background-color: hsl(231 100% 99% / var(--tw-bg-opacity));
   padding: 1rem;
   font-size: 0.938rem;
+}
+
+.plan-type {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
 }
 
 *, ::before, ::after {
@@ -790,6 +803,10 @@ label {
   margin-bottom: 0.75rem;
 }
 
+.mb-5 {
+  margin-bottom: 1.25rem;
+}
+
 .ml-3 {
   margin-left: 0.75rem;
 }
@@ -820,10 +837,6 @@ label {
 
 .mt-6 {
   margin-top: 1.5rem;
-}
-
-.mb-5 {
-  margin-bottom: 1.25rem;
 }
 
 .block {
@@ -883,6 +896,10 @@ label {
   width: 2.5rem;
 }
 
+.w-14 {
+  width: 3.5rem;
+}
+
 .w-3 {
   width: 0.75rem;
 }
@@ -894,14 +911,6 @@ label {
 
 .w-full {
   width: 100%;
-}
-
-.w-16 {
-  width: 4rem;
-}
-
-.w-14 {
-  width: 3.5rem;
 }
 
 .appearance-none {
@@ -989,7 +998,7 @@ label {
 }
 
 .bg-sidebar-mobile {
-  background-image: url('../assets/images/bg-sidebar-mobile.svg');
+  background-image: url('assets/images/bg-sidebar-mobile.svg');
 }
 
 .bg-cover {
@@ -1000,14 +1009,14 @@ label {
   padding: 0.75rem;
 }
 
-.py-8 {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-}
-
 .py-20 {
   padding-top: 5rem;
   padding-bottom: 5rem;
+}
+
+.py-8 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .pb-3 {
@@ -1061,17 +1070,17 @@ label {
 @font-face {
   font-family: "Ubuntu-Bold";
 
-  src: url(../assets/fonts/Ubuntu-Bold.ttf);
+  src: url(assets/fonts/Ubuntu-Bold.ttf);
 }
 
 @font-face {
   font-family: "Ubuntu-Medium";
 
-  src: url(../assets/fonts/Ubuntu-Medium.ttf);
+  src: url(assets/fonts/Ubuntu-Medium.ttf);
 }
 
 @font-face {
   font-family: "Ubuntu-Regular";
 
-  src: url(../assets/fonts/Ubuntu-Regular.ttf);
+  src: url(assets/fonts/Ubuntu-Regular.ttf);
 }

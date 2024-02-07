@@ -44,7 +44,7 @@ module.exports = {
         0.5: "0.1px",
       },
       backgroundImage: {
-        "sidebar-mobile": "url('../assets/images/bg-sidebar-mobile.svg')",
+        "sidebar-mobile": "url('assets/images/bg-sidebar-mobile.svg')",
       },
       boxShadow: {
         "card-shadow": "rgba(0, 0, 0, 0.1) 0px 4px 12px;",

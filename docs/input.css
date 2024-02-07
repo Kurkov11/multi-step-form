@@ -4,15 +4,15 @@
 
 @font-face {
   font-family: "Ubuntu-Bold";
-  src: url(../assets/fonts/Ubuntu-Bold.ttf);
+  src: url(assets/fonts/Ubuntu-Bold.ttf);
 }
 @font-face {
   font-family: "Ubuntu-Medium";
-  src: url(../assets/fonts/Ubuntu-Medium.ttf);
+  src: url(assets/fonts/Ubuntu-Medium.ttf);
 }
 @font-face {
   font-family: "Ubuntu-Regular";
-  src: url(../assets/fonts/Ubuntu-Regular.ttf);
+  src: url(assets/fonts/Ubuntu-Regular.ttf);
 }
 
 @layer base {
@@ -45,7 +45,7 @@
     @apply mx-side-margin bg-white rounded-xl px-6 py-7 relative shadow-card-shadow;
   }
   .personal-input {
-    @apply placeholder:text-600 placeholder:text-neutral-700 px-5 py-2 mb-2 block w-full focus:outline focus:outline-purple-blue;
+    @apply transition-all placeholder:text-600 placeholder:text-neutral-700 px-5 py-2 mb-2 block w-full focus:outline focus:outline-purple-blue outline-1;
   }
   .gray-border {
     @apply border rounded-md border-neutral-400;
@@ -72,15 +72,18 @@
     @apply w-5 h-5 rounded gray-border bg-no-repeat bg-[length:13px_11px] bg-center;
   }
   .checkbox-checked {
-    @apply bg-purple-blue bg-[url('../assets/images/icon-checkmark.svg')] border-none;
+    @apply bg-purple-blue bg-[url('assets/images/icon-checkmark.svg')] border-none;
   }
   .add-on {
-    @apply gray-border p-3 flex items-center;
+    @apply gray-border p-3 flex items-center transition-all;
   }
   .add-on-checked {
     @apply bg-neutral-300 bg-opacity-40 border-purple-blue;
   }
   .summary {
     @apply bg-neutral-200 rounded p-4 text-600;
+  }
+  .plan-type {
+    @apply transition-all;
   }
 }
